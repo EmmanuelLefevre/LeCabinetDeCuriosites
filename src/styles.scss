@@ -1,1 +1,94 @@
-/* You can add global styles to this file, and also import other style files */
+/* ------ Color Palette ------ */
+:root {
+  /*---Main---*/
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-blue: #21D0C1;
+  --color-pink: #ff00df;
+  --color-pink-light: #ff61ff;
+  --color-pink-dark: #c700ad;
+  --color-dusky-pink: #3c4887;
+  /*---Background---*/
+  --bg-color: #312450;
+  /*---Text---*/
+  --text-color-dark: var(--color-black);
+  --text-color-white: var(--color-white);
+  --text-color-blue: var(--color-blue);
+  --text-color-pink: var(--color-pink);
+  /*---Buttons---*/
+  --button-text-color: var(--color-white);
+  --button-bg-color-blue: var(--color-blue);
+  --button-bg-color-pink: var(--color-pink);
+  /*---Hover---*/
+  --hover-: #e1ff95;
+  /*---Shadows---*/
+  --shadow-rgba: rgba(0,0,0,0.4);
+  /*---Borders---*/
+  --border-color-blue: var(--color-blue);
+  --border-color-pink: var(--color-pink);
+}
+
+/* ------ Semantic Fonts ------ */
+:root {
+  /*---Chipen---*/
+  --font-nav: 'chipen';
+  --font-weight-thin: 100;
+}
+@font-face {
+  font-family: "chipen";
+  src: url("assets/fonts/chipen/Chipen-Expanded.ttf") format("truetype");
+}
+@font-face {
+  font-family: "digitechno";
+  src: url("assets/fonts/digitechno/digitechno.ttf") format("truetype");
+}
+@font-face {
+  font-family: "netron";
+  src: url("assets/fonts/netron/netron.ttf") format("truetype");
+}
+
+
+/* ------ Reset ------ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+*:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ------ Body ------ */
+body {
+  // height:100%;
+  // color: var(--color-text);
+  // font-family: var(--ang-font-body-text);
+  // font-weight: var(--ang-body-font-weight-light);
+  // font-size: 15px;
+  // line-height: 1.6;
+  // background: var(--color-background);
+  // transition: color 0.5s, background-color 0.5s;
+  // text-rendering: optimizeLegibility;
+  overflow-x: hidden; 
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+  }
+}
