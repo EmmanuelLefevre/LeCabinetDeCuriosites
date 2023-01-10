@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostBinding, HostListener, OnInit } from '@angular/core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -10,9 +10,16 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 export class NavComponent implements OnInit {
 
   faBars = faBars
+
+  @HostBinding('class.burger-opened') burgerOpened = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleBurger() {
+    this.burgerOpened = !this.burgerOpened;
   }
 
 }

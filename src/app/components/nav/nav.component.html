@@ -1,31 +1,39 @@
 <header>
-  <div class="navbar">
-    <nav>
-      <!-- <div class="nav-logo" [routerLink]="['/']"></div> -->
-      <div class="nav-links">
-        <ul>
-          <li [routerLinkActive]="['active-link']"
-              [routerLinkActiveOptions]="{ exact: true }">
-            <a [routerLink]="['/']"
-               aria-label="bouton accueil"
-               role="button">Accueil
-            </a>
-          </li>
-          <li [routerLinkActive]="['active-link']">
-            <a [routerLink]="['workshop']"
-               aria-label="bouton club de robotique"
-               role="button">Club
-            </a>
-          </li>
-          <li [routerLinkActive]="['active-link']">
-            <a [routerLink]="['internship']"
-               aria-label="bouton stages scientifiques"
-               role="button">Stages
-            </a>
-          </li>
-        </ul>
-      </div>
-      <fa-icon [icon]="faBars" alt="menu hamburger"></fa-icon>
-    </nav>
-  </div>
+  <nav>
+    <!-- <div class="nav-logo">
+      <a [routerLink]="['/']">Logo</a>
+    </div> -->
+    <div (click)="toggleBurger()"
+          class="burger">
+      <fa-icon [icon]="faBars"
+                alt="menu hamburger">{{!burgerOpened ? 'menu': 'close'}}
+      </fa-icon>
+    </div>
+    <div class="nav-links">
+      <ul>
+        <li [routerLinkActive]="['active-link']"
+            [routerLinkActiveOptions]="{ exact: true }">
+          <a [routerLink]="['/']"
+              aria-label="bouton accueil"
+              role="button"
+              (click)="toggleBurger()">Accueil
+          </a>
+        </li>
+        <li [routerLinkActive]="['active-link']">
+          <a [routerLink]="['workshop']"
+              aria-label="bouton club de robotique"
+              role="button"
+              (click)="toggleBurger()">Club
+          </a>
+        </li>
+        <li [routerLinkActive]="['active-link']">
+          <a [routerLink]="['internship']"
+              aria-label="bouton stages scientifiques"
+              role="button"
+              (click)="toggleBurger()">Stages
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>

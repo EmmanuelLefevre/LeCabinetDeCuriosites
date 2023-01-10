@@ -9,7 +9,7 @@
   --color-pink-dark: #c700ad;
   --color-dusky-pink: #3c4887;
   /*---Background---*/
-  --bg-color: #312450;
+  --bg-color: #001C2C;
   /*---Text---*/
   --text-color-dark: var(--color-black);
   --text-color-white: var(--color-white);
@@ -31,22 +31,22 @@
 /* ------ Semantic Fonts ------ */
 :root {
   /*---Chipen---*/
+  --font-body: 'poppins', sans-serif;
   --font-nav: 'chipen';
   --font-weight-thin: 100;
+  // font-family: 'Dancing Script', cursive;
 }
 @font-face {
   font-family: "chipen";
-  src: url("assets/fonts/chipen/Chipen-Expanded.ttf") format("truetype");
+  src: url("assets/fonts/chipen/chipen.ttf") format("truetype");
 }
 @font-face {
-  font-family: "digitechno";
-  src: url("assets/fonts/digitechno/digitechno.ttf") format("truetype");
-}
-@font-face {
-  font-family: "netron";
-  src: url("assets/fonts/netron/netron.ttf") format("truetype");
+  font-family: "poppins";
+  src: url("assets/fonts/poppins/Poppins-Medium.ttf") format("truetype");
 }
 
+/* ------ Animations ------ */
+@import "~animate.css/animate.css";
 
 /* ------ Reset ------ */
 *,
@@ -65,30 +65,50 @@
 
 /* ------ Body ------ */
 body {
+  font-family: var(--font-body);
+  color: var(--color-white);
+  overflow-x: hidden;
+  background-color: var(--bg-color);
   // height:100%;
-  // color: var(--color-text);
-  // font-family: var(--ang-font-body-text);
   // font-weight: var(--ang-body-font-weight-light);
   // font-size: 15px;
   // line-height: 1.6;
   // background: var(--color-background);
   // transition: color 0.5s, background-color 0.5s;
   // text-rendering: optimizeLegibility;
-  overflow-x: hidden; 
   // -webkit-font-smoothing: antialiased;
   // -moz-osx-font-smoothing: grayscale;
-  .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .wrapper {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .container {
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: center;
+  //   align-items: center;
+  //   margin-right: auto;
+  //   margin-left: auto;
+  // }
+  // .wrapper {
+  //   display: flex;
+  //   flex-direction: column; 
+  //   justify-content: center;
+  //   align-items: center;
+  // }
