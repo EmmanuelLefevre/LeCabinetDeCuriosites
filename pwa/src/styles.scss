@@ -68,6 +68,10 @@
 }
 
 /* ------ Body ------ */
+html {
+  position: relative;
+	min-height: 100%;
+}
 body {
   font-family: var(--font-body);
   color: var(--color-white);
