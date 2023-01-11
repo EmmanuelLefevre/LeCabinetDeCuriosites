@@ -124,7 +124,12 @@
     .social {
       font-family: var(--font-text);
       .contact {
-        font-size: 0.8em;
+        font-size: 12px;
+        .first {
+          font-size: 1.8em;
+          color: var(--text-color-blue);
+          margin-bottom: 1vh;
+        }
         ul.icons {
           display: flex;
           flex-direction: row;
