@@ -10,6 +10,8 @@
   --color-dusky-pink: #3c4887;
   /*---Background---*/
   --bg-color: #001C2C;
+  --bg-nav-color-xl: #083148;
+  --bg-card-color: #3c4887;
   /*---Text---*/
   --text-color-dark: var(--color-black);
   --text-color-white: var(--color-white);
@@ -33,8 +35,8 @@
   /*---Chipen---*/
   --font-body: 'poppins', sans-serif;
   --font-nav: 'chipen';
-  --font-weight-thin: 100;
-  // font-family: 'Dancing Script', cursive;
+  --font-card: 'arial', 'helvetica', sans-serif;
+  --font-text: 'arial', 'helvetica', sans-serif;
 }
 @font-face {
   font-family: "chipen";
@@ -69,46 +71,79 @@ body {
   color: var(--color-white);
   overflow-x: hidden;
   background-color: var(--bg-color);
-  // height:100%;
-  // font-weight: var(--ang-body-font-weight-light);
-  // font-size: 15px;
-  // line-height: 1.6;
-  // background: var(--color-background);
-  // transition: color 0.5s, background-color 0.5s;
-  // text-rendering: optimizeLegibility;
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
+  transition: color 0.5s, background-color 0.5s;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  .button-activity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: normal;
+    margin-bottom: -1.7em;
+    a {
+      font-family: var(--font-text);
+      font-weight: bold;
+      transition: border-color 0.2s ease;
+      border-radius: 48px;
+      color: var(--color-white);
+      text-transform: uppercase;
+      font-size: 10px;
+      width: 130px;
+      height: calc(4.75em + 2px);
+      letter-spacing: 0.2em;
+      padding: 1.7em 0em;
+    }
+    .inscription {
+      background-color: var(--color-pink);
+      border: 2px solid var(--border-color-pink);
+    }
+    .link {
+      background-color: var(--color-blue);
+      border: 2px solid var(--border-color-blue);
+    }
+  }
 }
 
 
+/* ------ Responsive ------ */
+@media screen and (min-width: 768px) {
+  body {
+    .button-activity {
+      a {
+        &:hover {
+          background-color: var(--color-white);
+        }
+      }
+      .inscription {
+        &:hover {
+          color: var(--text-color-pink);
+        }
+      }
+      .link {
+        &:hover {
+          color: var(--text-color-blue);
+        }
+      }
+    }
+  }
+}
 
+@media screen and (min-width: 940px) {
+  body {
+    .button-activity {
+      &:first-child {
+        margin-top: -5em;
+      }
+    }
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .container {
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: center;
-  //   align-items: center;
-  //   margin-right: auto;
-  //   margin-left: auto;
-  // }
-  // .wrapper {
-  //   display: flex;
-  //   flex-direction: column; 
-  //   justify-content: center;
-  //   align-items: center;
-  // }
+@media screen and (min-width: 1080px) {
+  body {
+    .wrapper {
+      padding: 0 0 2vh 14vw !important;
+      
+    }
+  }
+}
