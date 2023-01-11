@@ -31,7 +31,6 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/scss/responsive.scss",
               "src/assets/scss/animations.scss",
               "node_modules/animate.css/animate.min.css"
             ],
