@@ -216,7 +216,7 @@
 
 @media screen and (min-width: 1080px) {
   .wrapper {
-    position: absolute;
+    position: relative;
     .logo {
       margin: 4vh 0 0 0 !important;
     }
@@ -228,7 +228,7 @@
       }
     }
     #contact {
-      margin-bottom: 5vh;
+      margin-bottom: 25vh;
       h1 {
         padding-left: 1vw;
         margin: 3vh 0 0 0;
