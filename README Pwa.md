@@ -1,38 +1,22 @@
 # DÉMARRAGE
-1. &nbsp;&nbsp;*/LeCabinetDeCuriosites*
+1. &nbsp;&nbsp;<ins> */htdocs*</ins> 
 \
-Installer Angular =>
+Cloner le projet =>
 ```
-ng new pwa
+git clone https://github.com/EmmanuelLefevre/LeCabinetDeCuriosites.git
 ```
-2. &nbsp;&nbsp;*/LeCabinetDeCuriosites/pwa*
+2. &nbsp;&nbsp;<ins> */LeCabinetDeCuriosites/pwa*</ins> 
+\
+Mettre à jour dépendances =>
+```
+npm install
+```
+3. &nbsp;&nbsp;<ins> */LeCabinetDeCuriosites/pwa*</ins> 
 \
 Lancer serveur local =>
 ```
 ng serve -o
 ```
 ```
-ng serve -o --port 4200
-```
-# ENVIRONNEMENT
-1. &nbsp;&nbsp;*/LeCabinetDeCuriosites/pwa*
-\
-Installer FontAwesome
-```
-npm install @fortawesome/fontawesome-svg-core
-```
-```
-npm install @fortawesome/free-solid-svg-icons
-```
-```
-npm install @fortawesome/free-brands-svg-icons
-```
-```
-npm install @fortawesome/angular-fontawesome@0.10.x
-```
-2. &nbsp;&nbsp;*/LeCabinetDeCuriosites/pwa*
-\
-Installer animate.css
-```
-npm i animate.css
+ng serve -o --port 4201
 ```
