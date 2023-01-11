@@ -25,9 +25,8 @@ header {
           }
         }
         .active-link > a {
-          color: var(--color-pink);
-          -webkit-box-shadow: inset 0px -3px 0px 0px var(--color-pink); 
-          box-shadow: inset 0px -3px 0px 0px var(--color-pink);
+          color: var(--text-color-pink);
+          border-bottom: solid 2px var(--border-color-pink);
         }
       }
     }
@@ -50,6 +49,7 @@ header {
 }
 
 
+/* ------ Responsive ------ */
 @media screen and (min-width: 768px) {
   header {
     height: 8vh;
@@ -79,6 +79,44 @@ header {
               &:hover {
                 color: var(--color-pink);
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  header {
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 8em;
+    z-index: 10000;
+    background-color: var(--bg-nav-color-xl);
+    nav {
+      display: flex !important;
+      justify-content: center !important;
+      min-height: 100%;
+      width: 100%;
+      text-align: right;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-transition: opacity 1s ease;
+      transition: opacity 1s ease;
+      opacity: 1;
+      .nav-links {
+        ul {
+          display: flex;
+          flex-direction: column;
+          padding-top: 0;
+          li {
+            a {
+              font-family: var(--font-body);
+              font-size: 18px;
+              text-transform: uppercase;
             }
           }
         }
