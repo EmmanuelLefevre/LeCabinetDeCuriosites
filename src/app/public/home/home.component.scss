@@ -1,0 +1,226 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5vh 12vw 2vh 12vw;
+  h1 {
+    font-size: 30px;
+    color: var(--color-blue);
+    margin: 2vh 0 1vh 0;
+  }
+  h3 {
+    font-size: 24px;
+    margin-bottom: 3vh;
+  }
+  #intro {
+    .logo {
+      margin: 4vh 0 0 0;
+      img {
+        width: 130px;
+        margin: 0 0 2vh 0;
+        height: fit-content;
+      }
+      h3 {
+        margin: 0;
+      }
+    }
+    .inner:nth-child(3) {
+      margin-top: 10vh;
+    }
+    .inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15vh;
+      h3 {
+        text-transform: uppercase;
+        margin: 0 0 3vh 0;
+        letter-spacing: 0.05em;
+      }
+      .card-text {
+        padding: 2vh 2vw 4vh 2vw;
+        h4, h5 {
+          font-family: var(--font-card);
+        }
+        h4 {
+          margin-bottom: 0.9vh;
+        }
+        h5 {
+          font-size: 16px;
+          font-weight: normal;
+        }
+        h4 > span {
+          color: var(--text-color-pink);
+        }
+        p {
+          margin: 0 0 3vh 0;
+        }
+      }
+      .activity {
+        .card {
+          width: 100%;
+          border: solid 3px var(--border-color-blue);
+          &:nth-child(2) {
+            margin: 18vh 0 0 0;
+          }
+          img {
+            width: 35%;
+            margin-top: -120px;
+          }
+        }
+      }
+      .image-banner {
+        img {
+          max-width: 100vw;
+          object-fit: cover;
+        }
+      }
+      .activity2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .card {
+          width: 80%;
+          border: solid 3px var(--border-color-pink);
+          background-color: var(--bg-card-color);
+          &:nth-child(2) {
+            margin: 22vh 0 0 0;
+          }
+          img {
+            width: 35%;
+            margin-top: -115px;
+          }
+          h4 {
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+          }
+        }
+      }
+    }
+    .color-fade {
+      background: linear-gradient(to bottom, var(--bg-color), transparent, 60%, var(--color-blue));
+      padding: 3vh 0 8vh 0;
+    }
+  }
+  #contact {
+    section.map {
+      border-top: solid 1px rgba(255, 255, 255, 0.15);
+      padding-top: 3em;
+    }
+    section > iframe {
+      width: auto;
+      height: 300px;
+    }
+    h1 {
+      margin: 3vh 0 2vh 0;
+      text-transform: uppercase;
+    }
+    .social {
+      font-family: var(--font-text);
+      .contact {
+        font-size: 0.8em;
+        ul.icons {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          padding-top: 2em;
+          margin: 0 0 2em 0;
+          li {
+            margin: 0 2em 0 2em;
+            fa-icon {
+              font-size: 4em;
+              color: var(--color-blue);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* ------ Responsive ------ */
+@media screen and (min-width: 768px) {
+  .wrapper {
+    #intro {
+      .logo {
+        margin: 10vh 0 0 0;
+      }
+    }
+    #contact {
+      iframe {
+        width: 500px !important;
+        height: 400px !important;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 940px) {
+  .wrapper {
+    .inner {
+      .activity {
+        display: flex;
+        flex-direction: row;
+        .card {
+          margin: 0 3vw 0 3vw !important;
+        }
+      }
+      .activity2 {
+        display: flex;
+        flex-direction: row !important;
+        .card {
+          margin: 0 3vw 0 3vw !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .wrapper {
+    #contact {
+      .inner {
+        h1 {
+          text-align: start;
+        }
+        .split {
+          display: flex;
+          flex-direction: row-reverse;
+          .social {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 3.5vh 0 0 8vw;
+          }
+          section.map {
+            border-top: none;
+            padding-top: 1.8em;
+            iframe {
+              border-right: solid 1px rgba(255, 255, 255, 0.15);
+              padding-right: 8vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .wrapper {
+    .inner {
+      .activity2 {
+        .card {
+          margin: 0 1vw 0 1vw !important;
+        }
+      }
+    }
+  }
+}

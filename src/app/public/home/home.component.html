@@ -1,1 +1,185 @@
+<div class="wrapper"> <!-- Main Wrapper -->  
+             
+  <section id="intro"
+           class="fade-up"> <!-- Intro Section -->
+    
+    <div class="logo"> <!-- Logo -->
+      <img src="assets/img/logos/logo-cabinet-curiosites.png"/> 
+      <div>
+        <h1>Le Cabinet de Curiosités</h1>
+        <h3>Exploration numérique et scientifique</h3>
+      </div>
+    </div> <!-- Logo End -->
 
+    <div class="inner"> <!-- Div Inner -->
+      <div class="activity">
+
+        <div class="card">
+          <img src="assets/img/tools.png"
+               class="card-img"
+               alt="image clé anglaise et tournevis"/>
+          <div class="card-text">
+            <h3>Club de <br> Robotique</h3> 
+            <h5>Pour explorer l'univers <br> du numérique, inventer, <br> fabriquer... le tout 
+              saupoudré <br>d'expériences scientifiques.</h5>
+            <p></p>
+            <h4><span>À partir de 10 ans</span></h4>
+            <h5>Atelier 1h30 / Semaine</h5>
+          </div>
+          <div class="button-activity">
+            <a href="assets/pdf/formulaireContact.pdf" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="inscription" 
+               role="button"
+               aria-label="bouton je m'inscris">Je m'inscris
+            </a>
+            <a [routerLink]="['workshop']"
+               [fragment]="'#workshop'"
+               class="link" 
+               role="button"
+               aria-label="bouton en savoir plus">En savoir plus
+            </a>
+          </div>                            
+        </div>
+        <div class="card">
+          <img src="assets/img/tools.png"
+               class="card-img"
+               alt="image clé anglaise et tournevis"/>
+          <div class="card-text">
+            <h3>Stages <br> Scientifiques</h3> 
+            <h5>Pour relever des challenges techniques  <br>en construisant ou fabriquant <br>des 
+              prototypes.</h5>
+            <p></p>
+            <h4><span>À partir de 10 ans</span></h4>
+            <h5>Stage 3 demi-journées</h5>
+          </div>
+          <div class="button-activity">
+            <a href="assets/pdf/formulaireContact.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                role="button"
+                class="inscription"
+                aria-label="bouton je m'inscris">Je m'inscris
+            </a>
+            <a [routerLink]="['internship']" 
+                class="link" 
+                role="button"
+                aria-label="bouton en savoir plus">En savoir plus
+            </a>
+          </div>
+        </div>
+             
+      </div>
+    </div> <!-- Div Inner End -->
+
+    <div class="inner"> <!-- Photo Rovers -->
+      <div class="image-banner">
+        <img src="assets/img/rovers-panoramique.jpg"
+             alt="photo de plusieurs rovers">
+      </div>
+    </div> <!-- Photo Rovers End -->
+                        
+    <div class="inner color-fade"> <!-- Activity Cards -->
+      <div class="activity2">
+
+        <div class="card">
+          <img src="assets/img/computer.png"
+               class="card-img"
+               alt="image ordinateur"/>
+          <div class="card-text">
+            <h3>Ateliers <br>tout public</h3>
+            <h5>Formation à la programmation, <br>à l'électronique, conception <br>de pièces mécaniques, 
+              <br>utilisation d'outils numériques.</h5>
+            <p></p>
+            <h4>Adultes</h4>
+            <h4><br></h4>
+            <h5>Atelier en soirée</h5>
+          </div>
+          <div class="button-activity">
+            <a href="assets/pdf/informationsComplementaires.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="inscription"
+                aria-label="bouton en savoir plus" 
+                role="button">En savoir plus
+            </a>
+          </div>                            
+        </div>  
+        <div class="card">
+          <img src="assets/img/rubik-cube.png" 
+               class="card-img"
+               alt="image de rubik cube"/>
+          <div class="card-text">
+            <h3>Animations <br>groupes</h3> 
+            <h5>Expertise, accompagnement et <br>développement de projets techniques. <br>
+            Animation d'ateliers et <br>médiation numérique.</h5>
+            <p></p>
+            <h4>Entreprises, associations, collectivités</h4>
+            <h5>Sur demande</h5>
+          </div>
+          <div class="button-activity">
+            <a href="assets/pdf/informationsComplementaires.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="inscription"
+                aria-label="bouton en savoir plus">En savoir plus
+            </a>
+          </div>                           
+        </div>
+
+      </div>
+    </div>  <!-- Activity Cards End -->
+
+  </section> <!-- Section Intro End-->
+            
+  <section id="contact"> <!-- Section Contact -->
+    <div class="inner"> <!-- Div Inner -->
+
+      <h1>Contact</h1>
+      <div class="split">
+        <section class="social">
+          <ul class="contact">
+            <li><h2>Cabinet de curiosités</h2></li>
+            <li><h2>50 rue Bourlion<br/> 16160 Gond-Pontouvre</h2></li>
+            <li><h2>makerspot@hotmail.com</h2></li>
+            <li><h2>06 75 87 67 34</h2></li>
+            <li>
+              <ul class="icons">
+                <li>
+                  <a href="https://www.facebook.com/CabinetCuriositesAngouleme/" 
+                      target="new"
+                      aria-label="lien vers Facebook" 
+                      role="button">
+                    <fa-icon [icon]="faFacebook"
+                              alt="icône Facebook Cabinet de Curiosites"></fa-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/le_cabinet_curiosites/" 
+                      target="new"
+                      aria-label="lien vers Instagram" 
+                      role="button">
+                    <fa-icon [icon]="faInstagram"
+                              alt="icône Insta Cabinet de Curiosites"></fa-icon>
+                  </a>
+                </li>                                         
+              </ul>                                     
+            </li>                                 
+          </ul>                             
+        </section>
+        <section class="map"> 
+          <iframe frameborder="0" 
+                  allowfullscreen
+                  src="http://umap.openstreetmap.fr/fr/map/cabinet-de-curiosites_838281?scaleControl=false&mini
+                  Map=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=false&searchControl
+                  =false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=
+                  undefined&captionBar=true&measureControl=false&editinosmControl=false&locateControl=
+                  true&fullscreenControl=true">
+          </iframe>
+        </section>
+      </div>
+
+    </div> <!-- Div Inner End -->
+  </section>  <!-- Section Contact End -->
+</div> <!-- Main Wrapper End -->
