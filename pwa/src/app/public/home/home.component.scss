@@ -242,3 +242,14 @@
     }
   }
 }
+
+@media screen and (min-width: 1400px) {
+  .wrapper {
+    #contact {
+      iframe {
+        width: 700px !important;
+        height: 400px !important;
+      }
+    }
+  }
+}
