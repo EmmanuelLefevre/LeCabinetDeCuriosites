@@ -1,1 +1,135 @@
-<p>internship works!</p>
+<div id="wrapper"> <!-- Main Wrapper -->
+
+  <section id="internship" class="wrapper fade-up" style="display: flex; justify-content: flex-start;background-image:url('assets/img/silos.jpg');"> <!-- Section Intro -->
+    <div class="inner" style="display: flex; min-height: 40em; padding: 0;justify-content: space-around; flex-wrap: wrap;"> <!-- Inner -->
+      
+      <div class="logo" style="padding: 0em 1em 0em 1em;">
+        <a [routerLink]="['home']" 
+           aria-label="lien vers l'accueil" 
+           role="button">
+          <img style="margin : 0 3em 0 3em; padding: 0em 0.5em 0em 0em;"
+               src="assets/img/logos/logo-cabinet-curiosites.png"
+               loading="lazy"
+               alt="logo cabinet de curiosité"/>
+        </a>
+        <div style="display: flex; flex-direction: column; align-items: flex;">
+          <h1 style="position: relative;">Exploration <br>scientifique</h1>
+        </div>
+      </div>
+
+      <div class="internship-card">
+        <div class="internship-description" style="margin-top: 1em;">
+          <h1>Les stages</h1>
+          <h2>Chaque stage est l’occasion de découvrir par le jeu 
+              une thématique technique : décrypter un signal codé, 
+              fabriquer un rover d’exploration, programmer un robot 
+              pour le sortir d’un labyrinthe... C’est toi qui est 
+              aux commandes ! <br>Alors fabrique, programme ou pilote, 
+              pour répondre au défi, résoudre l’énigme ou mener 
+              ton enquête !
+          </h2>
+        </div>
+        <div class="internship-text">
+          <h1>Informations</h1>
+          <h2>Vacances scolaires</h2>
+          <h2>3h x 3 demi-journées</h2>
+          <h2>Par niveau (10-18 ans)</h2>
+          <h2>4 à 8 participants</h2>
+          <p></p>
+          <h1>Tarif</h1>
+          <h2 style="padding: 0.7em;">145€ / Stage</h2>
+          <p></p>
+          <div class="button-activity">
+            <a href="assets/pdf/formulaireContact.pdf" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="inscription" 
+               aria-label="bouton je m'inscris"
+               role="button">Je m'inscris
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- Inner End -->
+  </section> <!-- Section Intro End -->
+
+  <section> <!-- Second Section -->
+
+    <section> <!-- Section Title Second Section -->
+      <div class="inner"style="padding-top: 3em; padding-bottom: 3rem;background-color: #083148; text-align: center;">
+        <h2 style="top: 0em; position: relative;margin-bottom: 0;">Prochains stages aux vacances de février</h2>
+      </div>
+    </section> <!-- Section Title Second Section End -->
+      
+    <div class="wrapper style2 spotlights">  <!-- Wrapper Second Section -->
+
+      <section> <!-- Section Internship -->
+
+        <div class="content" style="display: flex;flex-direction: column;justify-content: flex-start;align-items: center;">
+          <div class="inner" style="max-width: 20em; text-align: justify;">
+            <div class="img challenge">
+              <h3 class="img-title">Défi de la côte</h3>
+              <img src="assets/img/ghettoBlaster.jpg" 
+                   loading="lazy"
+                   alt="photo d'un ghetto-blaster"/>
+            </div>
+            Le stage est un challenge technique: 
+            construire avec des légos techniques, un véhicule capable de franchir 
+            la pente la plus abruptes possible. Les enfants sont guidés et 
+            procèdent par essais-erreurs pour améliorer chacun leur prototype. 
+            Les notions de moteur, roues motrices, d’adhérence, de centre de 
+            record sera t-il battu?<br>
+            <h5 style="text-align: justify;"># robotique, créativité, prototypes, 
+                essais-erreurs, assemblage, moteurs, engrenages, sans écran</h5>
+          </div>
+        </div>
+
+        <div class="content" style="display: flex;flex-direction: column;justify-content: flex-start;align-items: center;">
+          <div class="inner" style="max-width: 20em; text-align: justify;">
+            <div class="img labyrinth">
+              <h3 class="img-title">Sors du labyrinthe</h3>
+              <img src="assets/img/pleurotes.jpg" 
+                   loading="lazy"
+                   alt="photo de pleurotes"/>
+            </div>
+            <!-- <p style="padding: 1em 0 0.5em 0; max-width: 20em;"> -->
+            <!-- <p> -->
+              Les enfants apprennent à programmer des cartes électroniques 
+              embarquées sur des robots, qui ont pour mission de s’échapper 
+              d’un labyrinthe! Ce stage est un scénario dans lequel 2 équipes 
+              doivent coopérer pour programmer leur robot et lui faire retrouver 
+              le chemin de la sortie. Initiation à l’informatique, à la 
+              programmation embarquée, à la logique et manipulation de robots, 
+              de capteurs.<br>
+              <h5># robotique, logique, escape-game, expérimentation, algorithmie, 
+                  plateau de jeu, stratégie
+              </h5>
+            <!-- </p> -->
+          </div>
+        </div>
+
+      </section> <!-- Section Internship End -->
+            
+      <section style="flex-direction: column; align-items: center;  padding: 4em 0 0 0"> <!-- Section Inscription -->
+        <div class="content">
+          <h4>À partir de 10 ans</h4>
+          <h4>9h / 3 demie-journées</h4>
+          <h4>Pendant les vacances</h4>
+        </div>
+        <div class="button-activity" style="padding: 3em 0 2em 0; justify-content: center; ">
+          <div><a href="assets/pdf/formulaireContact.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="inscription"
+                  aria-label="bouton je m'inscris" 
+                  role="button">Je m'inscris
+                </a>
+          </div>
+        </div>
+      </section> <!-- Section Inscription End -->
+
+    </div> <!-- Wrapper Second Section End -->
+  </section> <!-- Second Section End -->
+
+</div>  <!-- Main Wrapper End -->
