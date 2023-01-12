@@ -12,6 +12,10 @@ ang-serv: ## Launch Angular local server
 	ng serve -o
 .PHONY: ang-serv
 
-stop-ang-serv: ## Stop Angular local server
+ang-stop-serv: ## Stop Angular local server
 	npx kill-port 4200
 .PHONY: stop-ang-serv
+
+ang-clear-cache: ## Clear Angular cache
+	npm cache clear --force
+.PHONY: ang-clear-cache
