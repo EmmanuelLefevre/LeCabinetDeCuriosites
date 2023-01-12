@@ -54,7 +54,7 @@ header {
   header {
     height: 8vh;
     width: 100vw;
-    background-color: var(--bg-color);
+    background-color: var(--bg-color) !important;
     backdrop-filter: none;
     .burger {
       display: none;
