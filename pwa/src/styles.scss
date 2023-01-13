@@ -81,33 +81,73 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  .button-activity {
+  .wrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-self: normal;
-    margin-bottom: -1.7em;
-    a {
-      font-family: var(--font-text);
-      font-weight: bold;
-      transition: border-color 0.2s ease;
-      border-radius: 48px;
-      color: var(--color-white);
-      text-transform: uppercase;
-      font-size: 10px;
-      width: 130px;
-      height: calc(4.75em + 2px);
-      letter-spacing: 0.2em;
-      padding: 1.7em 0em;
-      text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    h1 {
+      font-size: 30px;
+      color: var(--color-blue);
+      margin: 2vh 0 1vh 0;
     }
-    .inscription {
-      background-color: var(--color-pink);
-      border: 2px solid var(--border-color-pink);
+    h3 {
+      font-size: 24px;
+      margin-bottom: 3vh;
     }
-    .link {
-      background-color: var(--color-blue);
-      border: 2px solid var(--border-color-blue);
+    .logo {
+      margin: 8vh 0 0 0;
+      img {
+        width: 130px;
+        margin: 0 0 2vh 0;
+        height: fit-content;
+      }
+      h1 {
+        color: var(--text-color-blue);
+      }
+      h3 {
+        margin: 0;
+      }
+    }
+    .inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .button-activity {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-self: normal;
+      margin-bottom: -1.7em;
+      a {
+        font-family: var(--font-text);
+        font-weight: bold;
+        transition: border-color 0.2s ease;
+        border-radius: 48px;
+        color: var(--color-white);
+        text-transform: uppercase;
+        font-size: 10px;
+        width: 130px;
+        height: calc(4.75em + 2px);
+        letter-spacing: 0.2em;
+        padding: 1.7em 0em;
+        text-align: center;
+      }
+      .inscription {
+        background-color: var(--color-pink);
+        border: 2px solid var(--border-color-pink);
+      }
+      .link {
+        background-color: var(--color-blue);
+        border: 2px solid var(--border-color-blue);
+      }
     }
   }
 }
@@ -116,31 +156,27 @@ body {
 /* ------ Responsive ------ */
 @media screen and (min-width: 768px) {
   body {
-    .button-activity {
-      a {
-        &:hover {
-          background-color: var(--color-white);
-        }
+    .wrapper {
+      padding: 8vh 0 4vh 0;
+      .logo {
+        margin: 5vh 0 0 0;
       }
-      .inscription {
-        &:hover {
-          color: var(--text-color-pink);
+      .button-activity {
+        a {
+          &:hover {
+            background-color: var(--color-white);
+          }
         }
-      }
-      .link {
-        &:hover {
-          color: var(--text-color-blue);
+        .inscription {
+          &:hover {
+            color: var(--text-color-pink);
+          }
         }
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 940px) {
-  body {
-    .button-activity {
-      &:first-child {
-        margin-top: -5em;
+        .link {
+          &:hover {
+            color: var(--text-color-blue);
+          }
+        }
       }
     }
   }
@@ -149,8 +185,7 @@ body {
 @media screen and (min-width: 1080px) {
   body {
     .wrapper {
-      margin: 0 0 2vh 20vw !important;
-      padding: 0 !important;
+      padding: 0 0 15em 15em;
     }
   }
 }

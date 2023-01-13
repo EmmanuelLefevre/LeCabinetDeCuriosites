@@ -19,7 +19,9 @@ export class NavComponent implements OnInit {
   }
 
   toggleBurger() {
-    this.burgerOpened = !this.burgerOpened;
+    if (window.innerWidth < 768) {
+      this.burgerOpened = !this.burgerOpened;
+    }
   }
 
 }
