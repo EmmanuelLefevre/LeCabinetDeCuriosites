@@ -20,3 +20,4 @@ ng serve -o
 ```
 ng serve -o --port 4201
 ```
+http://localhost:4200/
