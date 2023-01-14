@@ -19,18 +19,25 @@
              (click)="toggleBurger()">Accueil
           </a>
         </li>
+        <li>
+          <a [routerLink]="['/']"
+             aria-label="bouton contact"
+             role="button"
+             (click)="toggleBurger()">Contact
+          </a>
+        </li>
         <li [routerLinkActive]="['active-link']">
           <a [routerLink]="['workshop']"
              aria-label="bouton club de robotique"
              role="button"
-             (click)="toggleBurger()">Club
+             (click)="toggleBurger()">Club <span>de robotique</span>
           </a>
         </li>
         <li [routerLinkActive]="['active-link']">
           <a [routerLink]="['internship']"
              aria-label="bouton stages scientifiques"
              role="button"
-             (click)="toggleBurger()">Stages
+             (click)="toggleBurger()">Stages <span>scientifiques</span>
           </a>
         </li>
       </ul>
