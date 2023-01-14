@@ -14,13 +14,13 @@ export class Error404Component implements OnInit {
   timeOut: any;
 
   constructor(private location: Location) { 
-    // this.timeOut = setTimeout(() => {
-    //   this.location.back();
-    // }, 7000);
+    this.timeOut = setTimeout(() => {
+      this.location.back();
+    }, 7000);
   }
 
   ngOnInit(): void {
-    // setInterval(() => { if (this.time > 0) this.time--; }, 1000);
+    setInterval(() => { if (this.time > 0) this.time--; }, 1000);
   }
 
   goBack() {
