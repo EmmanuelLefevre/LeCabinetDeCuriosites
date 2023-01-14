@@ -7,7 +7,6 @@
     align-content: center;
     height: 77vh;
     width: 100%;
-    overflow-y: hidden;
     padding: 2vh 0 2vh 0;
     .title {
       span {
@@ -36,9 +35,6 @@
         color: var(--color-blue);
         font-size: 2vh;
       }
-    }
-    .button-activity {
-      margin-bottom: 2vh;
     }
   }
 }
