@@ -8,21 +8,22 @@
     text-align: center;
     position: fixed;
     background-color: var(--button-scroll-bg-color);
-    border-color: var(--color-white);
+    border-color: var(--color-pink);
     width: 3.5rem;
     height: 3.5rem;
-    right: 3vw;
-    bottom: 3vh;
+    right: 2vw;
+    bottom: 2vh;
     opacity: 0;
     transition: all .2s ease-in-out;
     border-radius: 50%;
     line-height: 28px;
     z-index: 999;
     &:hover {
+      transition: all .2s ease-in-out;
       background-color: var(--color-white);
       border-color: var(--color-pink);
       fa-icon {
-        color: var(--color-pink);
+        color: var(--color-blue);
       }
     }
     fa-icon {
