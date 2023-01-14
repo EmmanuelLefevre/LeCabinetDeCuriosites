@@ -1,0 +1,40 @@
+@import "src/assets/scss/animations.scss";
+
+@media screen and (min-width: 550px) {
+  .button-scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    background-color: var(--button-scroll-bg-color);
+    border-color: var(--color-white);
+    width: 3.5rem;
+    height: 3.5rem;
+    right: 3vw;
+    bottom: 3vh;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    border-radius: 50%;
+    line-height: 28px;
+    z-index: 999;
+    &:hover {
+      background-color: var(--color-white);
+      border-color: var(--color-pink);
+      fa-icon {
+        color: var(--color-pink);
+      }
+    }
+    fa-icon {
+      font-size: 30px;
+      color: var(--button-scroll-color);
+      &:hover {
+        -webkit-animation: rubberBand 1.5s linear 0s infinite reverse;
+        animation: rubberBand 1.5s linear 0s infinite reverse;
+      }
+    }
+  }
+  .button-scroll--show {
+    opacity: 1;
+  }
+}
