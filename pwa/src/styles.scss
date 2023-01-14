@@ -84,6 +84,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   min-height: 100vh;
+  overflow-x: hidden;
   .wrapper {
     display: flex;
     flex-direction: column;
