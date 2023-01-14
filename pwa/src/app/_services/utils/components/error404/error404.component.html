@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="title animate__animated animate__bounceIn">
+      <span>404</span>
+      <p>Not Found</p>
+    </div>
+    <div class="img">
+      <img src="./../../../../../assets/img/404.png"
+           class="img-404 animate__animated animate__rollIn"
+           alt="image d'un robot cassé"/>
+    </div>
+    <div class="div-timer">
+      <p>La page que vous recherchez n'a pas été trouvée.</p>
+      <p>Vous allez être redirigé dans <span class="color">{{ time }}</span>s.</p>
+    </div>
+    <div class="button-activity">
+      <a (click)="goBack()"
+         class="link"
+         role="button"
+         aria-label="bouton retour">Retour
+      </a>
+    </div>
+  </div>
+</div>

@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top/scroll-to-top.component';
+import { Error404Component } from './_services/utils/components/error404/error404.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top/s
     AppComponent,
     NavComponent,
     FooterComponent,
-    ScrollToTopComponent
+    ScrollToTopComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,
