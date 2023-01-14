@@ -43,7 +43,7 @@ export class ScrollToTopComponent implements OnInit {
     (function smoothscroll() {
       const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
       if (currentScroll > 0) {
-        // window.requestAnimationFrame(smoothscroll);
+        window.requestAnimationFrame(smoothscroll);
         window.scrollTo(0, currentScroll - (currentScroll / 5));
       }
     })();
