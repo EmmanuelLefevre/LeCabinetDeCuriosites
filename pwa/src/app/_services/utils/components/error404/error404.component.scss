@@ -1,13 +1,13 @@
 .wrapper{
-  margin: auto;
+  min-height: 100%;
+  margin: 0 0 0 0;
   .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    height: 77vh;
     width: 100%;
-    padding: 2vh 0 2vh 0;
+    padding: 0 0 7vh 0;
     .title {
       span {
         font-family: var(--font-text);
@@ -41,26 +41,26 @@
 
 
 /* ------ Responsive ------ */
-@media screen and(min-width: 500px) {
- .wrapper {
-  .container {
-    height: 79vh;
-  }
- }
-}
+// @media screen and(min-width: 500px) {
+//  .wrapper {
+//   .container {
+//     height: 79vh;
+//   }
+//  }
+// }
 
 @media screen and(min-width: 768px) {
   .wrapper {
-   .container {
-     height: 67.5vh;
-   }
+    .container {
+      margin: 6vh 0 0 0;
+    }
   }
 }
 
 @media screen and(min-width: 1080px) {
   .wrapper {
     .container {
-      height: 74vh;
+      margin: 9vh 0 0 0;
     }
   }
 }

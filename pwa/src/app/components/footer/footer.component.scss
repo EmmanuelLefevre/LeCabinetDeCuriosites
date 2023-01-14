@@ -1,6 +1,10 @@
 footer {
-  width: 100%;
+  position: absolute;
+  width: 100%; 
   height: auto;
+  bottom: 0; 
+  left: 0; 
+  right: 0;
   background-color: var(--bg-footer-color);
   text-align: center;
   color: var(--color-white);
