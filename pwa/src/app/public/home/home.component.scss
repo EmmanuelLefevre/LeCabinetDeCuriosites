@@ -227,6 +227,11 @@
 
 @media screen and (min-width: 1350px) {
   .wrapper {
+    #intro {
+      .card {
+        margin: 0 6vw 0 6vw !important;
+      }
+    }
     #contact {
       .split {
         section.map {
