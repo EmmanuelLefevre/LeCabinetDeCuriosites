@@ -1,6 +1,6 @@
 header {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   color: var(--color-blue);
   background-color: var(--bg-color);
   nav {
@@ -59,14 +59,14 @@ header {
     display: flex;
     align-items: center;
     height: 8vh;
-    width: 100vw;
+    width: 100%;
     background-color: var(--bg-nav-color) !important;
     backdrop-filter: none !important;
     .burger {
       display: none;
     }
     nav {
-      width: 100vw;
+      width: 100%;
       .nav-links {
         display: flex;
         flex-direction: row;
