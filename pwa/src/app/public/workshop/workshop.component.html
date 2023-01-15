@@ -2,25 +2,24 @@
 
   <section id="workshop" 
            class="fade-up"> <!-- Section Workshop -->
-    <div class="logo" style="padding: 2em 2em 0em 3em;"> <!-- Banner -->
-      <a href="index.html#intro" 
+
+    <div class="logo"> <!-- Banner -->
+      <a [routerLink]="['/']" 
          aria-label="section introduction" 
          role="button">
-        <img style="padding: 0em 2em 0em 3em"
-             src="assets/img/logos/logo-cabinet-curiosites.png"
-             loading="lazy"
+        <img src="assets/img/logos/logo-cabinet-curiosites.png"
              alt="logo cabinet de curiosité"/>
       </a>
-      <div>
-        <h1>Club de robotique</h1>
-      </div>
+      <h1>Club de Robotique</h1>
     </div> <!-- Banner End -->
+
     <div class="inner"> <!-- Image -->
       <div class="image-banner" >
-        <img src="assets/img/rover-cote-zoom.jpg"
-             alt="photo d'un petit rover robotisé et motorisé montant une côte">
+        <img src="assets/img/banner-workshop.jpg"
+             alt="photo d'un rover montant une côte et d'un rover de face">
       </div>
-    </div> <!-- Image End -->			
+    </div> <!-- Image End -->
+
     <div class="inner"> <!-- Immertion -->
       <div>
         <h2>Immertion dans le monde 
@@ -49,14 +48,14 @@
             </ul>
           </div>	
           <div class="workshop-img">	
-            <img src="assets/img/devanture.jpg" 
+            <img src="assets/img/banner-workshop-local.jpg" 
                  width="100%" 
-                 alt="photo de la devanture des locaux"/>
+                 alt="photo de l'intérieur' des locaux"/>
           </div>
         </div> <!-- Description End -->						
         <div class="workshop-card"> <!-- Info -->
           <div class="info-card-info">
-            <img src="assets/img/testPictoStage.png"
+            <img src="assets/img/picto-rocket-kid.png"
                  alt="image d'un enfant sur une fusée"
                  class="workshop-sticker"/>			
             <h2>Informations</h2>                      
@@ -82,6 +81,7 @@
         </div> <!-- Info End -->
       </div> <!-- Home End -->
     </div> <!-- Immertion End -->
+
   </section> <!-- Section Workshop End -->
                     
   <section class="wrapper"> <!-- Section Title -->
@@ -111,7 +111,7 @@
         </div>
         <a class="image" 
            aria-label="atelier mécanique">
-          <img src="assets/img/atelierRover.jpg"
+          <img src="assets/img/workshop-mechanical.jpg"
                alt="construction d'enfant en légos techniques"/>
         </a>
       </section> <!-- Mechanics Makes Sense End -->
@@ -132,8 +132,8 @@
         </div>
         <a class="image" 
            aria-label="atelier électricité">
-          <img src="assets/img/atelierMeca04-dim.jpg" 
-               alt="moteur et fils"/>
+          <img src="assets/img/workshop-electronic.jpg" 
+               alt="photo d'une Led et d'une résistance"/>
         </a>
       </section> <!-- Electricity Survey End -->    
 
@@ -154,8 +154,8 @@
         </div>
         <a class="image" 
            aria-label="atelier programmation informatique">
-          <img src="assets/img/atelierMeca03-dim.jpg" 
-               alt=""/>
+          <img src="assets/img/workshop-programming.jpg" 
+               alt="screen d'écran sudo apt-get"/>
         </a>           
       </section> <!-- Computer Programmming End -->
                 
@@ -178,8 +178,8 @@
         </div>
         <a class="image" 
            aria-label="atelier fabrication">
-          <img src="assets/img/atelierMeca07-dim.jpg" 
-               alt=""/>
+          <img src="assets/img/workshop-manufacturing.jpg" 
+               alt="photo d'une imprimante 3D en fonctionnement"/>
         </a>
       </section> <!-- Custom Manufacturing End -->
 

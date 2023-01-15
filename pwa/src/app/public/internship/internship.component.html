@@ -1,24 +1,20 @@
 <div id="wrapper"> <!-- Main Wrapper -->
 
-  <section id="internship" class="wrapper fade-up" style="display: flex; justify-content: flex-start;background-image:url('assets/img/silos.jpg');"> <!-- Section Intro -->
-    <div class="inner" style="display: flex; min-height: 40em; padding: 0;justify-content: space-around; flex-wrap: wrap;"> <!-- Inner -->
+  <section id="internship" class="wrapper fade-up"> <!-- Section Intro -->
+    <div class="inner"> <!-- Inner -->
       
-      <div class="logo" style="padding: 0em 1em 0em 1em;">
-        <a [routerLink]="['home']" 
+      <div class="logo"> <!-- Logo -->
+        <a [routerLink]="['/']" 
            aria-label="lien vers l'accueil" 
            role="button">
-          <img style="margin : 0 3em 0 3em; padding: 0em 0.5em 0em 0em;"
-               src="assets/img/logos/logo-cabinet-curiosites.png"
-               loading="lazy"
+          <img src="assets/img/logos/logo-cabinet-curiosites.png"
                alt="logo cabinet de curiosité"/>
         </a>
-        <div style="display: flex; flex-direction: column; align-items: flex;">
-          <h1 style="position: relative;">Exploration <br>scientifique</h1>
-        </div>
-      </div>
+        <h1>Exploration <br>Scientifique</h1>
+      </div> <!-- Logo End -->
 
       <div class="internship-card">
-        <div class="internship-description" style="margin-top: 1em;">
+        <div class="internship-description">
           <h1>Les stages</h1>
           <h2>Chaque stage est l’occasion de découvrir par le jeu 
               une thématique technique : décrypter un signal codé, 
@@ -37,7 +33,7 @@
           <h2>4 à 8 participants</h2>
           <p></p>
           <h1>Tarif</h1>
-          <h2 style="padding: 0.7em;">145€ / Stage</h2>
+          <h2>145€ / Stage</h2>
           <p></p>
           <div class="button-activity">
             <a href="assets/pdf/formulaireContact.pdf" 
@@ -57,8 +53,8 @@
   <section> <!-- Second Section -->
 
     <section> <!-- Section Title Second Section -->
-      <div class="inner"style="padding-top: 3em; padding-bottom: 3rem;background-color: #083148; text-align: center;">
-        <h2 style="top: 0em; position: relative;margin-bottom: 0;">Prochains stages aux vacances de février</h2>
+      <div class="inner">
+        <h2>Prochains stages aux vacances de février</h2>
       </div>
     </section> <!-- Section Title Second Section End -->
       
@@ -66,13 +62,13 @@
 
       <section> <!-- Section Internship -->
 
-        <div class="content" style="display: flex;flex-direction: column;justify-content: flex-start;align-items: center;">
-          <div class="inner" style="max-width: 20em; text-align: justify;">
-            <div class="img challenge">
+        <div class="content">
+          <div class="inner">
+            <div class="img hill">
               <h3 class="img-title">Défi de la côte</h3>
-              <img src="assets/img/ghettoBlaster.jpg" 
+              <img src="assets/img/internship-hill.jpg" 
                    loading="lazy"
-                   alt="photo d'un ghetto-blaster"/>
+                   alt="photo de deux rovers"/>
             </div>
             <div>Le stage est un challenge technique: 
                 construire avec des légos techniques, un véhicule capable de franchir 
@@ -80,20 +76,20 @@
                 procèdent par essais-erreurs pour améliorer chacun leur prototype. 
                 Les notions de moteur, roues motrices, d’adhérence, de centre de 
                 record sera t-il battu?<br>
-              <h5 style="text-align: justify;"># robotique, créativité, prototypes, 
+              <h5># robotique, créativité, prototypes, 
                   essais-erreurs, assemblage, moteurs, engrenages, sans écran
               </h5>
             </div>
           </div>
         </div>
 
-        <div class="content" style="display: flex;flex-direction: column;justify-content: flex-start;align-items: center;">
-          <div class="inner" style="max-width: 20em; text-align: justify;">
-            <div class="img labyrinth">
+        <div class="content">
+          <div class="inner">
+            <div class="img maze">
               <h3 class="img-title">Sors du labyrinthe</h3>
-              <img src="assets/img/pleurotes.jpg" 
+              <img src="assets/img/internship-maze.jpg" 
                    loading="lazy"
-                   alt="photo de pleurotes"/>
+                   alt="photo d'un rover à guidage lazer'"/>
             </div>
             <!-- <p style="padding: 1em 0 0.5em 0; max-width: 20em;"> -->
             <div>Les enfants apprennent à programmer des cartes électroniques 
@@ -112,13 +108,13 @@
 
       </section> <!-- Section Internship End -->
             
-      <section style="flex-direction: column; align-items: center;  padding: 4em 0 0 0"> <!-- Section Inscription -->
+      <section> <!-- Section Inscription -->
         <div class="content">
           <h4>À partir de 10 ans</h4>
           <h4>9h / 3 demie-journées</h4>
           <h4>Pendant les vacances</h4>
         </div>
-        <div class="button-activity" style="padding: 3em 0 2em 0; justify-content: center; ">
+        <div class="button-activity">
           <div><a href="assets/pdf/formulaireContact.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer" 
