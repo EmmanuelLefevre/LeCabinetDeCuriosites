@@ -1,43 +1,41 @@
 <header>
-  <nav>
+  <nav (click)="toggleBurger()"
+       (scroll)="scrollHandler($event)">
     <!-- <div class="nav-logo">
       <a [routerLink]="['/']">Logo</a>
     </div> -->
-    <div (click)="toggleBurger()"
-         class="burger">
+    <div class="burger">
       <fa-icon [icon]="faBars"
                alt="menu hamburger">{{!burgerOpened ? 'menu': 'close'}}
       </fa-icon>
     </div>
     <div class="nav-links">
       <ul>
-        <li [routerLinkActive]="['active-link']"
+        <li #welcome
+            [routerLinkActive]="['active-link']"
             [routerLinkActiveOptions]="{ exact: true }">
           <a [routerLink]="['/']"
              aria-label="bouton accueil"
-             role="button"
-             (click)="toggleBurger()">Accueil
+             role="button">Accueil
           </a>
         </li>
-        <li>
+        <li #contact>
           <a [routerLink]="['/']"
+             [fragment]="'contact'"
              aria-label="bouton contact"
-             role="button"
-             (click)="toggleBurger()">Contact
+             role="button">Contact
           </a>
         </li>
         <li [routerLinkActive]="['active-link']">
           <a [routerLink]="['workshop']"
              aria-label="bouton club de robotique"
-             role="button"
-             (click)="toggleBurger()">Club <span>de robotique</span>
+             role="button">Club <span>de robotique</span>
           </a>
         </li>
         <li [routerLinkActive]="['active-link']">
           <a [routerLink]="['internship']"
              aria-label="bouton stages scientifiques"
-             role="button"
-             (click)="toggleBurger()">Stages <span>scientifiques</span>
+             role="button">Stages <span>scientifiques</span>
           </a>
         </li>
       </ul>

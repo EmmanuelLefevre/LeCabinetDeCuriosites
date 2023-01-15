@@ -1,8 +1,13 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 
 import { Error404Component } from './_services/utils/components/error404/error404.component';
 
+const routerOptions: ExtraOptions = {
+  scrollPositionRestoration: 'enabled',
+  anchorScrolling: 'enabled',
+  scrollOffset: [0, 64]
+};
 
 const routes: Routes = [
   {
@@ -13,7 +18,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, routerOptions)],
   exports: [RouterModule]
 })
 
