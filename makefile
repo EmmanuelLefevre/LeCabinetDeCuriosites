@@ -19,3 +19,7 @@ stop: ## Stop Angular local server
 cc: ## Clear Angular cache
 	cd pwa && $(MAKE) ang-clear-cache
 .PHONY: cc
+
+servx: ## Relaunch Angular with clear cache
+	cd pwa && $(MAKE) ang-relaunch-serv
+.PHONY: cc

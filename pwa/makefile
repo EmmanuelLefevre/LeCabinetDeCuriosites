@@ -19,3 +19,9 @@ ang-stop-serv: ## Stop Angular local server
 ang-clear-cache: ## Clear Angular cache
 	npm cache clear --force
 .PHONY: ang-clear-cache
+
+ang-relaunch-serv: ## Relaunch Angular with clear cache
+	npx kill-port 4200
+	npm cache clear --force
+	ng serve -o
+.PHONY: ang-relaunch-serv
