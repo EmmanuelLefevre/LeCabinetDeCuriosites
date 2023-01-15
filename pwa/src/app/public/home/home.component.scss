@@ -162,6 +162,9 @@
         }
       }
     }
+    .color-fade {
+      padding: 3vh 0 10vh 0 !important;
+    }
   }
 }
 
@@ -201,12 +204,18 @@
 
 @media screen and (min-width: 1080px) {
   .wrapper {
+    .inner:nth-child(3) {
+      margin-top: 15.5vh !important;
+    }
     .inner {
       .activity2 {
         .card {
           margin: 0 2vw 0 2vw !important;
         }
       }
+    }
+    .color-fade {
+      padding: 6vh 0 13vh 0 !important;
     }
     #contact {
       h1 {
@@ -244,3 +253,9 @@
     }
   }
 }
+
+// @media screen and (min-width: 1680px) {
+//   .wrapper {
+
+//   }
+// }
