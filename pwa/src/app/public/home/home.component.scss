@@ -159,9 +159,9 @@
         flex-direction: row !important;
         .card {
           margin: 0 3vw 0 3vw !important;
-        }
-        .card:nth-of-type(2) {
-          padding: 1vh 0 0 0;
+          &:nth-of-type(2) {
+            padding: 1vh 0 0 0;
+          }
         }
       }
     }
