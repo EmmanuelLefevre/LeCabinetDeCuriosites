@@ -31,7 +31,7 @@ export class NavComponent implements OnInit {
   
   @HostListener('window:scroll', ['$event'])
   scrollHandler(_$event: any) { 
-    if (window.pageYOffset > 2100) {
+    if ((this.router.url === '/' || this.router.url === '/#contact') && window.pageYOffset > 2000) {
       this.liContact.nativeElement.classList.add("active-link");
       this.liWelcome.nativeElement.classList.remove("active-link");
     } else if(this.router.url === '/workshop' || this.router.url === '/internship') {
