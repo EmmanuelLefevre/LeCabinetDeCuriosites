@@ -9,6 +9,7 @@ help: ## List of commands
 
 ## ============ SERVER ============
 ang-serv: ## Launch Angular local server
+	npm cache clear --force
 	ng serve -o
 .PHONY: ang-serv
 
