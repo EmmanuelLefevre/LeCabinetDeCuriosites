@@ -1,6 +1,11 @@
 .wrapper {
   #intro {
     width: 100%;
+    background-attachment: fixed;
+    background-image: url("./../../../assets/img/quadrillage.svg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     .inner:nth-child(3) {
       margin-top: 10vh;
     }
