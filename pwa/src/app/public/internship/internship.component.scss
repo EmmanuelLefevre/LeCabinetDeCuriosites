@@ -35,7 +35,7 @@
           }
         }
         .internship-text {
-          color: var(--text-color-card-internship);
+          color: var(--text-color-card);
           background-color: var(--color-blue);
           padding: 0;
           height: 14em;
@@ -46,7 +46,7 @@
             font-size: 24px;
             font-weight: bold;
             margin: 0;
-            color: var(--text-color-card-internship);
+            color: var(--text-color-card);
             text-transform: uppercase;
             &:first-of-type {
               padding: 1vh 0;
