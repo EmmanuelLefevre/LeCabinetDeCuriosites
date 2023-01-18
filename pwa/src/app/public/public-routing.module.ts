@@ -7,8 +7,8 @@ import { InternshipComponent } from './internship/internship.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
-  { path: 'workshop', component: WorkshopComponent },
-  { path: 'internship', component: InternshipComponent }
+  { path: 'club', component: WorkshopComponent },
+  { path: 'stage', component: InternshipComponent }
 ];
 
 

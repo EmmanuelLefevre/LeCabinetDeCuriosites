@@ -34,7 +34,7 @@ export class NavComponent implements OnInit {
     if ((this.router.url === '/' || this.router.url === '/#contact') && window.pageYOffset > 2000) {
       this.liContact.nativeElement.classList.add("active-link");
       this.liWelcome.nativeElement.classList.remove("active-link");
-    } else if(this.router.url === '/workshop' || this.router.url === '/internship') {
+    } else if(this.router.url === '/club' || this.router.url === '/stage') {
       this.liWelcome.nativeElement.classList.remove("active-link");
       this.liContact.nativeElement.classList.remove("active-link");
     } else {
