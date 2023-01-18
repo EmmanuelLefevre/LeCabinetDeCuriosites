@@ -7,5 +7,65 @@
     .inner {
       width: 100%;
     }
+    .inner {
+      .image-banner {
+        margin: 2em 0;
+        img {
+          max-width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .inner.immertion {
+      padding: 1em 2em 1em 2em;
+      h2 {
+        font-size: 22.4px;
+        padding-bottom: 2.4em;
+        color: var(--text-color-pink);
+      }
+      .workshop-home {
+        margin: 1em 0 1em 0;
+        .workshop-description {
+          .workshop-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 29em;
+            text-align: justify;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            span {
+              color: var(--text-color-blue);
+            }
+            h3 {
+              font-size: 24px;
+              text-align: center;
+              font-weight: bold;
+              line-height: 1.5;
+            }
+            h5 {
+              font-size: 12.8px;
+              font-weight: normal;
+            }
+            ul {
+              list-style: disc;
+              margin: 0 0 2em 0;
+              padding-left: 1em;
+              li {
+                padding: 0.5em 0em 0em 0em;
+                list-style-type: square;
+                margin: 0 0 0 2em;
+                font-size: 1em;
+                text-align: left;
+                color: rgba(255, 255, 255, 0.55);
+                h5 {
+                  color: var(--text-color-white);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
