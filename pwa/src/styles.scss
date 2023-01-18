@@ -38,7 +38,7 @@
 /* ------ Semantic Fonts ------ */
 :root {
   /*---Chipen---*/
-  --font-body: 'poppins', sans-serif;
+  --font-body: 'arial', 'helvetica', sans-serif;
   --font-nav: 'arial', 'helvetica', sans-serif;
   --font-card: 'arial', 'helvetica', sans-serif;
   --font-text: 'arial', 'helvetica', sans-serif;
@@ -99,7 +99,7 @@ body {
     min-height: 100vh;
     margin-right: auto;
     margin-left: auto;
-    padding: 1vh 0 13em 0;
+    padding: 2vh 0 13em 0;
     h1 {
       font-size: 30px;
       color: var(--color-blue);
