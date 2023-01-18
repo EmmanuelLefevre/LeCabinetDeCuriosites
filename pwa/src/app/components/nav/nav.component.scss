@@ -93,12 +93,12 @@ header {
             a {
               font-size: 9.6px;
               font-weight: bold;
-              padding-bottom: 1.95vh;
+              padding-bottom: 2.1vh;
               letter-spacing: 0.25em;
               line-height: 1.75;
               outline: 0;
-              color: rgba(255, 255, 255, 0.35);
               border-bottom: solid 2px var(--border-bottom-color-nav);
+              color: rgba(255, 255, 255, 0.35);
               &:hover {
                 color: var(--hover-nav);
               }
