@@ -59,6 +59,7 @@ header {
       flex: none !important;
       a {
         display: block !important;
+        text-align: center;
       }
     }
   }
@@ -102,8 +103,8 @@ header {
               &:hover {
                 color: var(--hover-nav);
               }
-              span {
-                display: inline;
+              br {
+                display: none;
               }
             }
           }
@@ -161,6 +162,23 @@ header {
           }
           li:first-child {
             margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1650px) {
+  header {
+    width: 22em;
+    nav {
+      .nav-links {
+        ul {
+          li {
+            a {
+              font-size: 11.8px;
+            }
           }
         }
       }
