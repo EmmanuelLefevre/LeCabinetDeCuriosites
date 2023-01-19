@@ -8,7 +8,6 @@
   #internship {
     width: 100%;
     padding-bottom: 5em;
-    background-image: url("./../../../assets/img/banner-internship.jpg");
     .inner {
       width: 100%;
       opacity: 1.0;
@@ -20,7 +19,7 @@
         .internship-description {
           margin-top: 1em;
           padding: 0;
-          background-color: var(--bg-color);
+          background-color: var(--bg-color-light);
           h1 {
             font-size: 19.2px;
             margin: 0 0 0 0;
@@ -44,7 +43,7 @@
           color: var(--text-color-card);
           background-color: var(--color-blue);
           padding: 0;
-          height: 14em;
+          height: 14.2em;
           margin-bottom: -1.7em;
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
@@ -157,6 +156,9 @@
       flex-direction: column;
       justify-content: flex-start;
       min-height: 94vh;
+      background-image: url("./../../../assets/img/banner-internship.jpg");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
       .inner {
         display: flex;
         flex-direction: row;
@@ -164,34 +166,41 @@
         flex-wrap: wrap;
         margin-top: 2vh;
         .logo {
-          margin: 0 0 0 6em;
+          margin: 0;
           img {
             width: 200px;
           }
           h1 {
+            font-size: 35px;
             margin: 0.5em 0 0 1em;
           }
         }
         .internship-card {
-          margin: 0 0 0 6em;
+          .internship-description {
+            background-color: var(--bg-color);
+          }
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .wrapper {
     #challenge {
-      #title {
-        .inner {
-          h2 {
-            
+      width: 100%;
+      .wrapper2 {
+        width: 100%;
+        .challenge {
+          display: flex !important;
+          flex-direction: row !important;
+          justify-content: center !important;
+          .content {
+            padding: 0 3.2em 0 3.2em;
           }
         }
-      }
-      .wrapper2 {
-        .challenge {
-          .content {
-            .inner {
-              // max-width: 20em;
-            }
-          }
+        .contact {
+          padding: 3em 0 4em 0;
         }
       }
     }
@@ -206,6 +215,18 @@
   }
 }
 
+@media screen and (min-width: 1300px) {
+  .wrapper {
+    #internship {
+      .inner {
+        .internship-card {
+          margin-left: 16em;
+        }
+      }
+    }
+  }
+}
+
 @media screen and(min-width: 1400px) {
   .wrapper {
     #internship {
@@ -215,16 +236,105 @@
         }
       }
     }
+    #challenge {
+      .wrapper2 {
+        .challenge {
+          .content {
+            padding: 0 5em 0 5em;
+          }
+        }
+      }
+    }
   }
 }
 
-// @media screen and(min-width: 1680px) {
-//   .wrapper {
-//     #internship {
-//       .inner {
-//         .internship-card {
-//         }
-//       }
-//     }
-//   }
-// }
+@media screen and(min-width: 1650px) {
+  .wrapper {
+    #internship {
+      .inner {
+        height: 40em;
+        margin-top: 4em;
+        .logo {
+          margin: 0 30em 14em 0;
+          img {
+            width: 250px;
+          }
+          h1 {
+            font-size: 50px;
+          }
+        }
+        .internship-card {
+          height: 40em;
+          width: 25em;
+          margin: 0;
+          .internship-description {
+            h1 {
+              font-size: 26.5px;
+            }
+            h2 {
+              font-size: 20px;
+            }
+          }
+          .internship-text {
+            height: 17em;
+            h1 {
+              font-size: 33px
+            }
+            h2 {
+              font-size: 20px
+            }
+          }
+        }
+      }
+    }
+    #challenge {
+      #title {
+        .inner {
+          padding: 4em 0;
+          h2 {
+            font-size: 35px;
+          }
+        }
+      }
+      .wrapper2 {
+        .challenge {
+          justify-content: space-around !important;
+          padding: 0 8em;
+          .content {
+            padding: 0 2em 0 2em;
+            h3 {
+              font-size: 28px;
+            }
+            .inner {
+              .div-img {
+                height: 30em;
+                width: 25em;
+              }
+              .text {
+                font-size: 20px;
+                h5 {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+        .contact {
+          padding: 3em 0 5.5em 0;
+          .content {
+            h4 {
+              font-size: 24px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+    .button-activity {
+      a {
+        width: 190px;
+        font-size: 13px;
+      }
+    }
+  }
+}
