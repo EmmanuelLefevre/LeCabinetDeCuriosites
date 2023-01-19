@@ -10,8 +10,6 @@
     padding-bottom: 5em;
     .inner {
       width: 100%;
-      opacity: 1.0;
-      transition: opacity 1s ease, transform 1s ease;
       .internship-card {
         height: 32em;
         width: 20em;
@@ -94,11 +92,6 @@
             font-size: 16px;
             color: rgba(255, 255, 255, 0.55);
             line-height: 1.5;
-            -moz-transition: opacity 1s ease, -moz-transform 1s ease;
-            -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-            -ms-transition: opacity 1s ease, -ms-transform 1s ease;
-            transition: opacity 1s ease, transform 1s ease;
-            opacity: 1;
             .div-img {
               border-radius: 10px;
               height: 25em;
