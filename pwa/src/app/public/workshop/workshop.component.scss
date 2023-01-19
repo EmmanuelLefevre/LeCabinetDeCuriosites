@@ -144,8 +144,19 @@
   section {
     .wrapper {
       background: linear-gradient(var(--bg-color), var(--bg-color-light));
-      border-bottom: 5px solid var(--bg-color);
       section {
+        &:nth-child(1) {
+          background-color: rgba(0, 0, 0, 0.2);
+        }
+        &:nth-child(2) {
+          background-color: rgba(0, 0, 0, 0.05);
+        }
+        &:nth-child(3) {
+          background-color: rgba(0, 0, 0, 0.17);
+        }
+        &:nth-child(4) {
+          background-color: rgba(0, 0, 0, 0.3);
+        }
         &:last-of-type {
           padding-bottom: 3.2em;
         }
