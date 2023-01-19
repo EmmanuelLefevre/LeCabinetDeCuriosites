@@ -202,3 +202,11 @@ body {
     }
   }
 }
+
+@media screen and (min-width: 1650px) {
+  body {
+    .wrapper {
+      padding: 0 0 12em 22em;
+    }
+  }
+}

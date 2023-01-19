@@ -144,8 +144,19 @@
   section {
     .wrapper {
       background: linear-gradient(var(--bg-color), var(--bg-color-light));
-      border-bottom: 5px solid var(--bg-color);
       section {
+        &:nth-child(1) {
+          background-color: rgba(0, 0, 0, 0.2);
+        }
+        &:nth-child(2) {
+          background-color: rgba(0, 0, 0, 0.05);
+        }
+        &:nth-child(3) {
+          background-color: rgba(0, 0, 0, 0.17);
+        }
+        &:nth-child(4) {
+          background-color: rgba(0, 0, 0, 0.3);
+        }
         &:last-of-type {
           padding-bottom: 3.2em;
         }
@@ -157,8 +168,6 @@
           .inner {
             padding: 3em 0 1em 0;
             text-align: left;
-            transition: opacity 1s ease, transform 1s ease;
-            opacity: 1;
             h3 {
               color: var(--text-color-blue);
               margin: 1em 0 1em 0;
@@ -200,6 +209,142 @@
           }
           .image.img-manufacturing {
             background-image: url("./../../../assets/img/workshop-manufacturing.jpg");
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* ------ Responsive ------ */
+@media screen and (min-width: 980px) {
+  .wrapper {
+    #workshop {
+      .inner.immertion {
+        h2 {
+          font-size: 35px;
+        }
+      }
+      .workshop-description {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 38em;
+        .workshop-text {
+          h3 {
+            font-size: 26px !important;
+            text-align: left !important;
+          }
+          h5 {
+            font-size: 16px !important;
+          }
+        }
+      }
+    }
+    section {
+      .wrapper {
+        section {
+          .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 3em 0 1em 0;
+            .inner {
+              width: 35em;
+              padding: 0 0 1em 0;
+            }
+          }
+        }
+      }
+    }
+    .wrapper {
+      .inner {
+        h2 {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}
+
+// @media screen and (min-width: 1080px) {
+//   .wrapper {
+//     #workshop {
+//       .workshop-description {
+//         width: 29em;
+//       }
+//     }
+//   }
+// }
+
+@media screen and (min-width: 1650px) {
+  .wrapper {
+    #workshop {
+      .inner.immertion {
+        .workshop-home {
+          .workshop-description {
+            width: 50em;
+            .workshop-text {
+              h3 {
+                font-size: 28px !important;
+                text-align: left !important;
+              }
+              h5 {
+                font-size: 19px !important;
+              }
+            }
+          }
+          .workshop-card {
+            width: 25em;
+            height: 30em;
+            .info-card-info {
+              height: 19.8em;
+              img {
+                width: 40%;
+                margin-top: -95px;
+                max-width: 200px;
+                min-width: 80px;
+              }
+              h2 {
+                font-size: 30px;
+              }
+              h4 {
+                font-size: 16px;
+              }
+              .button-activity {
+                a {
+                  width: 170px;
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    section {
+      .wrapper {
+        section {
+          .content {
+            justify-content: space-around;
+            padding: 4em 5em 2em 5em;
+            .inner {
+              h3 {
+                font-size: 30px;
+              }
+              p {
+                font-size: 19px;
+              }
+              h5 {
+                font-size: 19px;
+              }
+            }
+            .image {
+              height: 400px;
+              width: 400px;
+            }
           }
         }
       }
