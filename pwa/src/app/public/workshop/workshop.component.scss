@@ -210,10 +210,6 @@
 
 /* ------ Responsive ------ */
 @media screen and (min-width: 980px) {
-
-}
-
-@media screen and (min-width: 980px) {
   .wrapper {
     #workshop {
       .inner.immertion {
@@ -224,14 +220,16 @@
       .workshop-description {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
+        width: 38em;
         .workshop-text {
           h3 {
-            font-size: 28px !important;
+            font-size: 26px !important;
             text-align: left !important;
           }
           h5 {
-            font-size: 18px !important;
+            font-size: 16px !important;
           }
         }
       }
@@ -262,8 +260,58 @@
   }
 }
 
+// @media screen and (min-width: 1080px) {
+//   .wrapper {
+//     #workshop {
+//       .workshop-description {
+//         width: 29em;
+//       }
+//     }
+//   }
+// }
+
 @media screen and (min-width: 1650px) {
   .wrapper {
+    #workshop {
+      .inner.immertion {
+        .workshop-home {
+          .workshop-description {
+            width: 50em;
+            .workshop-text {
+              h3 {
+                font-size: 28px !important;
+                text-align: left !important;
+              }
+              h5 {
+                font-size: 19px !important;
+              }
+            }
+          }
+          .workshop-card {
+            width: 25em;
+            height: 30em;
+            .info-card-info {
+              height: 19.8em;
+              img {
+                width: 40%;
+                margin-top: -95px;
+                max-width: 200px;
+                min-width: 80px;
+              }
+              h2 {
+                font-size: 30px;
+              }
+              h4 {
+                font-size: 16px;
+              }
+              p {
+                
+              }
+            }
+          }
+        }
+      }
+    }
     section {
       .wrapper {
         section {
