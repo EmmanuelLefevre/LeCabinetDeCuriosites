@@ -19,7 +19,7 @@
   --text-color-blue: var(--color-blue);
   --text-color-pink: var(--color-pink);
   --text-color-nav: var(--color-pink2);
-  --text-color-card-internship: var(--bg-color);
+  --text-color-card: var(--bg-color);
   /*---Buttons---*/
   --button-text-color: var(--color-white);
   --button-bg-color-blue: var(--color-blue);
@@ -38,7 +38,7 @@
 /* ------ Semantic Fonts ------ */
 :root {
   /*---Chipen---*/
-  --font-body: 'poppins', sans-serif;
+  --font-body: 'arial', 'helvetica', sans-serif;
   --font-nav: 'arial', 'helvetica', sans-serif;
   --font-card: 'arial', 'helvetica', sans-serif;
   --font-text: 'arial', 'helvetica', sans-serif;
@@ -62,6 +62,7 @@
 *::after {
   margin: 0;
   padding: 0;
+  border: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
@@ -99,7 +100,7 @@ body {
     min-height: 100vh;
     margin-right: auto;
     margin-left: auto;
-    padding: 1vh 0 13em 0;
+    padding: 2vh 0 12em 0;
     h1 {
       font-size: 30px;
       color: var(--color-blue);
@@ -149,6 +150,7 @@ body {
         letter-spacing: 0.2em;
         padding: 1.7em 0em;
         text-align: center;
+        white-space: nowrap;
         cursor: pointer;
       }
       .inscription {
@@ -196,7 +198,7 @@ body {
 @media screen and (min-width: 1080px) {
   body {
     .wrapper {
-      padding: 0 0 15em 18em;
+      padding: 0 0 12em 18em;
     }
   }
 }
