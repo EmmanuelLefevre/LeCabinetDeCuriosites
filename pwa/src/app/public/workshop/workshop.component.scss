@@ -36,9 +36,11 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        justify-content: center;
         margin: 1em 0 1em 0;
         .workshop-description {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
           .workshop-text {
             display: flex;
             flex-direction: column;
