@@ -54,6 +54,7 @@ header {
     height: 100vh;
     background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(10px);
+    z-index: 10000;
     .nav-links {
       display: block !important;
       flex: none !important;

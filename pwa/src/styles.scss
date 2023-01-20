@@ -50,8 +50,9 @@
   src: url("assets/fonts/poppins/Poppins-Medium.ttf") format("truetype");
 }
 
-/* ------ Animations ------ */
+/* ------ Imports ------ */
 @import "~animate.css/animate.min.css";
+@import "~leaflet/dist/leaflet.css";
 
 /* ------ Reset ------ */
 *,

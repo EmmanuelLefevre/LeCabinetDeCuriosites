@@ -13,6 +13,18 @@ npm install
 ```
 3. &nbsp;&nbsp;*/<ins>LeCabinetDeCuriosites/pwa*</ins> 
 \
+Leaflet OpenStreetMap
+```
+npm install leaftlet @types/leaflet
+```
+4. &nbsp;&nbsp;*/<ins>LeCabinetDeCuriosites/pwa*</ins> 
+\
+Animate.css
+```
+npm install animate.css
+```
+5. &nbsp;&nbsp;*/<ins>LeCabinetDeCuriosites/pwa*</ins> 
+\
 Lancer serveur local =>
 ```
 ng serve -o

@@ -89,12 +89,10 @@
     .inner {
       width: 100%;
       section.map {
+        display: flex;
+        justify-content: center;
         border-top: solid 1px rgba(255, 255, 255, 0.15);
         padding: 3em 0 1.5em 0;
-      }
-      section > iframe {
-        width: auto;
-        height: 300px;
       }
       h1 {
         margin: 3vh 0 3vh 0;
@@ -138,17 +136,6 @@
 
 
 /* ------ Responsive ------ */
-@media screen and (min-width: 768px) {
-  .wrapper {
-    #contact {
-      iframe {
-        width: 500px !important;
-        height: 400px !important;
-      }
-    }
-  }
-}
-
 @media screen and (min-width: 940px) {
   .wrapper {
     .inner {
@@ -180,7 +167,6 @@
   .wrapper {
     #contact {
       h1 {
-        // text-align: start !important;
         margin-bottom: 3vh;
       }
       .split {
@@ -197,13 +183,8 @@
         }
         section.map {
           border-top: none;
-          padding-top: 0;
-          iframe {
-            border-right: solid 1px rgba(255, 255, 255, 0.15);
-            padding-right: 8vw;
-            width: 400px !important;
-            height: 300px !important;
-          }
+          border-right: solid 1px rgba(255, 255, 255, 0.15);
+          padding: 0 8vw 0 0;
         }
       }
     }
@@ -226,6 +207,7 @@
       padding: 6vh 0 13vh 0 !important;
     }
     #contact {
+      margin-bottom: 5vh;
       h1 {
         padding-left: 1vw;
         margin: 3vh 0 0 0;
@@ -234,9 +216,7 @@
         padding: 5vh 0 0 0 !important;
       }
       section.map {
-        iframe {
-          padding: 0 5vw 0 1vw !important;
-        }
+        padding: 0 5vw 0 1vw !important;
       }
     }
   }
@@ -250,14 +230,7 @@
       }
     }
     #contact {
-      .split {
-        section.map {
-          iframe {
-            width: 700px !important;
-            height: 400px !important;
-          }
-        }
-      }
+      margin-bottom: 8vh;
     }
   }
 }
@@ -269,9 +242,7 @@
         padding: 5vh 0 0 4vw !important;
       }
       section.map {
-        iframe {
-          padding: 0 7vw 0 0 !important;
-        }
+        padding: 0 7vw 0 0 !important;
       }
     }
   }
