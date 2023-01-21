@@ -18,9 +18,10 @@ export class MapComponent implements AfterViewInit {
     popupAnchor: [1, -37]
   });
   busIcon = new L.Icon({
-      iconUrl: './../../../../assets/img/icons/bus-marker.svg',
-      iconSize: [19, 22]
-    });
+    iconUrl: './../../../../assets/img/icons/bus-marker.svg',
+    iconSize: [19, 22],
+    tooltipAnchor: [-10, 0]
+  });
 
   constructor() { }
 
@@ -50,11 +51,15 @@ export class MapComponent implements AfterViewInit {
 
     mainLayer.addTo(this.map);
 
-    const localMarker = L.marker([45.673812, 0.179429], { icon: this.localIcon }).addTo(this.map);
-    localMarker.bindPopup("<b>Le Cabinet de Curiosités</b>").openPopup();
+    var customLocalOptions = {
+      'autoClose' : false
+    }
 
-    const busMarker = L.marker([45.672129, 0.173746], { icon: this.busIcon }).addTo(this.map);
-    busMarker.bindPopup(`<b>Bus: 2 / 6 / 10 / NAU</b><br><b>Arrêt 24002</b>`);
+    var localPopup = L.popup().setContent(`<b>Le Cabinet de Curiosités</b>`);
+    var busPopup = L.tooltip().setContent(`Bus: 2 / 6 / 10 / NAU`);
+
+    L.marker([45.673812, 0.179429], { icon: this.localIcon }).bindPopup(localPopup, customLocalOptions).addTo(this.map).openPopup();
+    L.marker([45.672129, 0.173746], { icon: this.busIcon }).bindTooltip(busPopup, {direction: 'left'}).addTo(this.map).openTooltip();
   }
 
 }
