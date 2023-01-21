@@ -271,6 +271,20 @@
   }
 }
 
+@media screen and (min-width: 1080px) {
+  .wrapper {
+    section {
+      .wrapper {
+        section {
+          .content {
+            padding: 3em 1em 1em 1em;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 1650px) {
   .wrapper {
     #workshop {
