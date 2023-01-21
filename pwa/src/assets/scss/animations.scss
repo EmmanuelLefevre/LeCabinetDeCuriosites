@@ -1,0 +1,8 @@
+/* ------ AOS Animations ------*/
+[data-aos="opacity"] {
+  opacity: 0.2;
+  transition-property: transform, opacity;
+}
+[data-aos="opacity"].aos-animate {
+  opacity: 1;
+}

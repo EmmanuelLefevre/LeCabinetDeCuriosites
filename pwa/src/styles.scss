@@ -44,17 +44,15 @@
   --font-text: 'arial', 'helvetica', sans-serif;
   --font-footer: 'poppins', sans-serif;
 }
-@font-face {
-  font-family: "roboto";
-  src: url("assets/fonts/roboto/Roboto-Medium.ttf") format("truetype");
-}
+
 @font-face {
   font-family: "poppins";
   src: url("assets/fonts/poppins/Poppins-Medium.ttf") format("truetype");
 }
 
-/* ------ Animations ------ */
+/* ------ Imports ------ */
 @import "~animate.css/animate.min.css";
+@import "~leaflet/dist/leaflet.css";
 
 /* ------ Reset ------ */
 *,
@@ -100,7 +98,7 @@ body {
     min-height: 100vh;
     margin-right: auto;
     margin-left: auto;
-    padding: 2vh 0 12em 0;
+    padding: 2vh 0 11em 0;
     h1 {
       font-size: 30px;
       color: var(--color-blue);
@@ -170,7 +168,7 @@ body {
 @media screen and (min-width: 768px) {
   body {
     .wrapper {
-      padding: 3.5em 0 13em 0;
+      padding: 3.5em 0 12em 0;
       .logo {
         margin: 5vh 0 0 0;
       }
