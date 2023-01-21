@@ -1,8 +1,23 @@
-/* ------ AOS Animations ------*/
+/* ------ Animations ------*/
+
+// Opacity image on scroll /club
 [data-aos="opacity"] {
   opacity: 0.2;
   transition-property: transform, opacity;
 }
 [data-aos="opacity"].aos-animate {
   opacity: 1;
+}
+
+
+// Animation for wheel mouse-icon
+@-webkit-keyframes drop {
+  0%   { top:5px;  opacity: 0;}
+  30%  { top:10px; opacity: 1;}
+  100% { top:25px; opacity: 0;}
+}
+@keyframes drop	{
+0%   { top:5px;  opacity: 0;}
+30%  { top:10px; opacity: 1;}
+100% { top:25px; opacity: 0;}
 }

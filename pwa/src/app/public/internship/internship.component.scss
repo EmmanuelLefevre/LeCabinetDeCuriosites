@@ -68,6 +68,9 @@
         }
       }
     }
+    .call-action-scroll {
+      display: none;
+    }
   }
   #challenge {
     #title {
@@ -279,6 +282,12 @@
               font-size: 20px
             }
           }
+        }
+      }
+      .call-action-scroll {
+        display: flex;
+        .mouse-icon {
+          margin-top: 9em;
         }
       }
     }

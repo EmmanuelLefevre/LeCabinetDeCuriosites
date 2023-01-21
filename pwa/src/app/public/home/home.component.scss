@@ -82,6 +82,9 @@
       background: linear-gradient(to bottom, var(--bg-color), transparent, 60%, var(--color-blue));
       padding: 3vh 0 8vh 0;
     }
+    .call-action-scroll {
+      display: none;
+    }
   }
   #contact {
     width: 100%;
@@ -251,10 +254,13 @@
 @media screen and (min-width: 1650px) {
   .wrapper {
     #intro {
-      .card-wrapper {
-        height: 95vh;
+      .full-page {
+        height: 100vh;
         .inner {
           margin-top: 15vh;
+        }
+        .call-action-scroll {
+          display: flex;
         }
       }
       .inner {
