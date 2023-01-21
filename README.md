@@ -25,6 +25,12 @@ npm install animate.css
 ```
 5. &nbsp;&nbsp;*/<ins>LeCabinetDeCuriosites/pwa*</ins> 
 \
+aos-animate-on-scroll
+```
+npm install aos @types/aos
+```
+6. &nbsp;&nbsp;*/<ins>LeCabinetDeCuriosites/pwa*</ins> 
+\
 Lancer serveur local =>
 ```
 ng serve -o
