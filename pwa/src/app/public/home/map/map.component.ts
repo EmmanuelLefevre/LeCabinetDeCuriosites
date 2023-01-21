@@ -12,12 +12,15 @@ export class MapComponent implements AfterViewInit {
   map: any;
 
   localIcon = new L.Icon({
-    iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-icon.png',
-    iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-icon-2x.png',
-    iconSize:    [25, 41],
-    iconAnchor:  [12, 41],
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
     popupAnchor: [1, -37]
   });
+  busIcon = new L.Icon({
+      iconUrl: './../../../../assets/img/icons/bus-marker.svg',
+      iconSize: [19, 22]
+    });
 
   constructor() { }
 
@@ -49,6 +52,9 @@ export class MapComponent implements AfterViewInit {
 
     const localMarker = L.marker([45.673812, 0.179429], { icon: this.localIcon }).addTo(this.map);
     localMarker.bindPopup("<b>Le Cabinet de Curiosités</b>").openPopup();
+
+    const busMarker = L.marker([45.672129, 0.173746], { icon: this.busIcon }).addTo(this.map);
+    busMarker.bindPopup(`<b>Bus: 2 / 6 / 10 / NAU</b><br><b>Arrêt 24002</b>`);
   }
 
 }
