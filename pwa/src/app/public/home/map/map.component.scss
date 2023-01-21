@@ -1,0 +1,28 @@
+#map {
+  width: 330px;
+  height: 350px;
+  z-index: 1;
+}
+
+
+/* ------ Responsive ------ */
+@media screen and (min-width: 768px) {
+  #map {
+    width: 600px !important;
+    height: 400px !important;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  #map {
+    width: 350px !important;
+    height: 350px !important;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  #map {
+    width: 600px !important;
+    height: 400px !important;
+  }
+}
