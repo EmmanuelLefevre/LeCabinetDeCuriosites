@@ -81,6 +81,8 @@ header {
     }
     nav {
       width: 100%;
+      -webkit-animation: bounceInLeft 1.5s linear 0s;
+      animation: bounceInLeft 1.5s linear 0s;
       .nav-links {
         display: flex;
         flex-direction: row;
@@ -118,7 +120,7 @@ header {
 @media screen and (min-width: 1080px) {
   header {
     position: fixed;
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
     height: 100vh;
     width: 18em;
@@ -132,12 +134,8 @@ header {
       justify-content: center !important;
       min-height: 100%;
       width: 100%;
-      -moz-transform: translateY(0);
-      -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-      transform: translateY(0);
-      -webkit-transition: opacity 1s ease;
-      transition: opacity 1s ease;
+      -webkit-animation: fadeInUp 1.5s linear 0s;
+      animation: fadeInUp 1.5s linear 0s;
       opacity: 1;
       .nav-links {
         display: block;
