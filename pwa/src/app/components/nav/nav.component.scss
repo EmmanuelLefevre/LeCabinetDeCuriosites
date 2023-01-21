@@ -76,6 +76,7 @@ header {
     width: 100%;
     background-color: var(--bg-nav-color) !important;
     backdrop-filter: none !important;
+    z-index: 10000;
     .burger {
       display: none;
     }
