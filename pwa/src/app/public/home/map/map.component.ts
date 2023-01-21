@@ -51,14 +51,14 @@ export class MapComponent implements AfterViewInit {
 
     mainLayer.addTo(this.map);
 
-    var customLocalOptions = {
+    var localOptions = {
       'autoClose' : false
     }
 
     var localPopup = L.popup().setContent(`<b>Le Cabinet de Curiosités</b>`);
     var busPopup = L.tooltip().setContent(`Bus: 2 / 6 / 10 / NAU`);
 
-    L.marker([45.673812, 0.179429], { icon: this.localIcon }).bindPopup(localPopup, customLocalOptions).addTo(this.map).openPopup();
+    L.marker([45.673812, 0.179429], { icon: this.localIcon }).bindPopup(localPopup, localOptions).addTo(this.map).openPopup();
     L.marker([45.672129, 0.173746], { icon: this.busIcon }).bindTooltip(busPopup, {direction: 'left'}).addTo(this.map).openTooltip();
   }
 
