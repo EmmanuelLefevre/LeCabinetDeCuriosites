@@ -247,3 +247,19 @@
     }
   }
 }
+
+@media screen and (min-width: 1650px) {
+  .wrapper {
+    #intro {
+      .card-wrapper {
+        height: 95vh;
+        .inner {
+          margin-top: 15vh;
+        }
+      }
+      .inner {
+        margin-top: 0;
+      }
+    }
+  }
+}
