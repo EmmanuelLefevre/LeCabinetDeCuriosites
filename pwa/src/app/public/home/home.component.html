@@ -2,75 +2,85 @@
 
   <section id="intro"> <!-- Intro Section -->
 
-    <div class="logo"> <!-- Logo -->
-      <img src="assets/img/logos/logo-cabinet-curiosites.png"
-           alt="logo cabinet de curiosité"/> 
-      <div>
-        <h1>Le Cabinet de Curiosités</h1>
-        <h3>Exploration numérique et scientifique</h3>
-      </div>
-    </div> <!-- Logo End -->
+    <div class="full-page">
 
-    <div class="inner"> <!-- Div Inner -->
-      <div class="activity animate__animated animate__flipInX">
+      <div class="logo"> <!-- Logo -->
+        <img src="assets/img/logos/logo-cabinet-curiosites.png"
+             alt="logo cabinet de curiosité"/> 
+        <div>
+          <h1>Le Cabinet de Curiosités</h1>
+          <h3>Exploration numérique et scientifique</h3>
+        </div>
+      </div> <!-- Logo End -->
+  
+      <div class="inner"> <!-- Div Inner -->
+        <div class="activity animate__animated animate__flipInX">
+  
+          <div class="card">
+            <img src="assets/img/card-workshop.png"
+                 class="card-img"
+                 alt="pictogramme de robot d'exploration de planètes"/>
+            <div class="card-text">
+              <h3>Club de <br> Robotique</h3> 
+              <h5>Pour explorer l'univers <br> du numérique, inventer, <br> fabriquer... le tout 
+                saupoudré <br>d'expériences scientifiques.</h5>
+              <p></p>
+              <h4><span>À partir de 10 ans</span></h4>
+              <h5>Atelier 1h30 / Semaine</h5>
+            </div>
+            <div class="button-activity">
+              <a href="assets/pdf/formulaireContact.pdf" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="inscription" 
+                 role="button"
+                 aria-label="bouton je m'inscris">Je m'inscris
+              </a>
+              <a [routerLink]="['club']"
+                 class="link" 
+                 role="button"
+                 aria-label="bouton en savoir plus">En savoir plus
+              </a>
+            </div>                            
+          </div>
+          <div class="card">
+            <img src="assets/img/card-internship.png"
+                 class="card-img"
+                 alt="image rover"/>
+            <div class="card-text">
+              <h3>Stages <br> Scientifiques</h3> 
+              <h5>Pour relever des challenges techniques  <br>en construisant ou fabriquant <br>des 
+                prototypes.</h5>
+              <p></p>
+              <h4><span>À partir de 10 ans</span></h4>
+              <h5>Stage 3 demi-journées</h5>
+            </div>
+            <div class="button-activity">
+              <a href="assets/pdf/formulaireContact.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  role="button"
+                  class="inscription"
+                  aria-label="bouton je m'inscris">Je m'inscris
+              </a>
+              <a [routerLink]="['stage']" 
+                  class="link" 
+                  role="button"
+                  aria-label="bouton en savoir plus">En savoir plus
+              </a>
+            </div>
+          </div>
+               
+        </div>
+      </div> <!-- Div Inner End -->
 
-        <div class="card">
-          <img src="assets/img/card-workshop.png"
-               class="card-img"
-               alt="pictogramme de robot d'exploration de planètes"/>
-          <div class="card-text">
-            <h3>Club de <br> Robotique</h3> 
-            <h5>Pour explorer l'univers <br> du numérique, inventer, <br> fabriquer... le tout 
-              saupoudré <br>d'expériences scientifiques.</h5>
-            <p></p>
-            <h4><span>À partir de 10 ans</span></h4>
-            <h5>Atelier 1h30 / Semaine</h5>
-          </div>
-          <div class="button-activity">
-            <a href="assets/pdf/formulaireContact.pdf" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               class="inscription" 
-               role="button"
-               aria-label="bouton je m'inscris">Je m'inscris
-            </a>
-            <a [routerLink]="['club']"
-               class="link" 
-               role="button"
-               aria-label="bouton en savoir plus">En savoir plus
-            </a>
-          </div>                            
+      <div class="call-action-scroll">
+        <div class="mouse-icon animate__animated animate__infinite animate__bounce">
+          <div class="wheel"></div>
         </div>
-        <div class="card">
-          <img src="assets/img/card-internship.png"
-               class="card-img"
-               alt="image rover"/>
-          <div class="card-text">
-            <h3>Stages <br> Scientifiques</h3> 
-            <h5>Pour relever des challenges techniques  <br>en construisant ou fabriquant <br>des 
-              prototypes.</h5>
-            <p></p>
-            <h4><span>À partir de 10 ans</span></h4>
-            <h5>Stage 3 demi-journées</h5>
-          </div>
-          <div class="button-activity">
-            <a href="assets/pdf/formulaireContact.pdf" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                role="button"
-                class="inscription"
-                aria-label="bouton je m'inscris">Je m'inscris
-            </a>
-            <a [routerLink]="['stage']" 
-                class="link" 
-                role="button"
-                aria-label="bouton en savoir plus">En savoir plus
-            </a>
-          </div>
-        </div>
-             
       </div>
-    </div> <!-- Div Inner End -->
+      
+    </div>
 
     <div class="inner"> <!-- Image Banner -->
       <div class="image-banner">

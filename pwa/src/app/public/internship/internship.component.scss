@@ -7,7 +7,7 @@
   background-size: 100% 100%;
   #internship {
     width: 100%;
-    padding-bottom: 5em;
+    padding-bottom: 3em;
     .inner {
       width: 100%;
       .internship-card {
@@ -68,6 +68,9 @@
         }
       }
     }
+    .call-action-scroll {
+      display: none;
+    }
   }
   #challenge {
     #title {
@@ -84,10 +87,6 @@
       .challenge {
         .content {
           padding: 0em 2em 0em 2em;
-          h3 {
-            color: var(--text-color-blue);
-            margin-bottom: 1vh;
-          }
           .inner {
             font-size: 16px;
             color: rgba(255, 255, 255, 0.55);
@@ -105,9 +104,13 @@
             .div-img.maze {
               background-image: url("./../../../assets/img/internship-maze.jpg");
             }
+            h3 {
+              color: var(--text-color-blue);
+              margin: 1em 0 0 0;
+            }
             .text {
               width: 20em;
-              margin: 1em 0 2.8em 0;
+              margin: 0.5em 0 2.8em 0;
               font-weight: 500;
               text-align: justify;
               h5 {
@@ -122,19 +125,6 @@
       }
       .contact {
         padding: 0 0 4em 0;
-        .content {
-          height: auto;
-          color: var(--text-color-blue);
-          h4 {
-            font-size: 14.4px;
-            font-weight: 500;
-            line-height: 1.5;
-          }
-        }
-        .button-activity {
-          margin-top: 3vh;
-          margin-bottom: -3em;
-        }
       }
     }
   }
@@ -175,6 +165,16 @@
         }
       }
     }
+    #challenge {
+      #title {
+        .inner {
+          padding: 3.5em 0;
+        }
+      }
+      .wrapper2 {
+        padding: 0;
+      }
+    }
   }
 }
 
@@ -182,6 +182,14 @@
   .wrapper {
     #challenge {
       width: 100%;
+      #title {
+        .inner {
+          padding: 4.5em 0;
+          h2 {
+            font-size: 35px;
+          }
+        }
+      }
       .wrapper2 {
         width: 100%;
         .challenge {
@@ -276,14 +284,17 @@
           }
         }
       }
+      .call-action-scroll {
+        display: flex;
+        .mouse-icon {
+          margin-top: 9em;
+        }
+      }
     }
     #challenge {
       #title {
         .inner {
-          padding: 4em 0;
-          h2 {
-            font-size: 35px;
-          }
+          padding: 5em 0;
         }
       }
       .wrapper2 {
@@ -311,12 +322,6 @@
         }
         .contact {
           padding: 3em 0 5.5em 0;
-          .content {
-            h4 {
-              font-size: 24px;
-              font-weight: bold;
-            }
-          }
         }
       }
     }

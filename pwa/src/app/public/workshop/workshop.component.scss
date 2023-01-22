@@ -23,6 +23,9 @@
           max-width: 100%;
           object-fit: cover;
         }
+        .call-action-scroll {
+          display: none;
+        }
       }
     }
     .inner.immertion {
@@ -288,7 +291,23 @@
 @media screen and (min-width: 1650px) {
   .wrapper {
     #workshop {
+      .full-page {
+        height: 100vh;
+        .inner {
+          .image-banner {
+            .call-action-scroll {
+              display: flex;
+              .mouse-icon {
+                margin-top: 38em;
+              }
+            }
+          }
+        }
+      }
       .inner.immertion {
+        h2 {
+          padding: 1em 0 2.4em 0;
+        }
         .workshop-home {
           .workshop-description {
             width: 50em;

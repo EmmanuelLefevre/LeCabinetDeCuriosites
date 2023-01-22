@@ -30,7 +30,7 @@ export class MapComponent implements AfterViewInit {
   }
 
   loadMap() {
-    const cabinetCuriosites = {
+    const center = {
       lat: 45.66600228331074,
       lng: 0.17119716870516388,
     };
@@ -38,7 +38,7 @@ export class MapComponent implements AfterViewInit {
     const zoomLevel = 12.5;
 
     this.map = L.map('map', {
-      center: [cabinetCuriosites.lat, cabinetCuriosites.lng],
+      center: [center.lat, center.lng],
       zoom: zoomLevel,
       scrollWheelZoom: false
     });
@@ -60,6 +60,10 @@ export class MapComponent implements AfterViewInit {
 
     L.marker([45.673812, 0.179429], { icon: this.localIcon }).bindPopup(localPopup, localOptions).addTo(this.map).openPopup();
     L.marker([45.672129, 0.173746], { icon: this.busIcon }).bindTooltip(busTooltip, {direction: 'left'}).addTo(this.map).openTooltip();
+
+    this.map.on('click', () => { this.map.scrollWheelZoom.enable();});
+    this.map.on('mouseout', () => { this.map.scrollWheelZoom.disable();});
+    
   }
 
 }
