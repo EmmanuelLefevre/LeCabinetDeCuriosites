@@ -171,8 +171,6 @@
           .inner {
             padding: 3em 0 1em 0;
             text-align: left;
-            // -webkit-animation: fadeInLeft 1.5s linear 0s;
-            // animation: fadeInLeft 1.5s linear 0s;
             h3 {
               color: var(--text-color-blue);
               margin: 1em 0 1em 0;
@@ -293,12 +291,16 @@
     #workshop {
       .full-page {
         height: 100vh;
+        .logo {
+          margin: 0;
+          padding: 5vh 0 0 0;
+        }
         .inner {
           .image-banner {
             .call-action-scroll {
               display: flex;
               .mouse-icon {
-                margin-top: 38em;
+                margin-top: 36em;
               }
             }
           }
