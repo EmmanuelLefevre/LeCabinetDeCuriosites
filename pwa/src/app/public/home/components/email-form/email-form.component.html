@@ -61,3 +61,10 @@
     </form>
   </div>
 </div> <!-- Email Form End -->
+<div *ngIf="spinnerService.visibility | async" class="spinnerIcon">
+  <div class="spinnerContainer">
+    <div class="circle">
+      <fa-icon [icon]="faRobot"></fa-icon>
+    </div>
+  </div>
+</div>

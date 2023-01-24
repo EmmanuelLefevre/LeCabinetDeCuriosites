@@ -21,3 +21,13 @@
 30%  { top:10px; opacity: 1;}
 100% { top:25px; opacity: 0;}
 }
+
+// ------ Spinner -------
+@keyframes spin {
+  from { transform: rotate(0deg) scale(1); }
+  to { transform: rotate(360deg) scale(1); }
+}
+@-webkit-keyframes spin {
+  from { transform: rotate(0deg) scale(1); } 
+  to { transform: rotate(360deg) scale(1); }
+}

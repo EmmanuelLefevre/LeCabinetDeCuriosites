@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 
+import { faRobot} from '@fortawesome/free-solid-svg-icons';
+
 import { EmailService } from 'src/app/_services/email.service';
 import { FormValidationService } from 'src/app/_services/form-validation.service';
 import { SnackbarService } from 'src/app/_services/snackbar.service';
+import { SpinnerService } from 'src/app/_services/spinner.service';
 
 
 @Component({
@@ -14,6 +17,8 @@ import { SnackbarService } from 'src/app/_services/snackbar.service';
 
 export class EmailFormComponent implements OnInit {
 
+  faRobot = faRobot;
+  
   // Email Form Group
   emailForm = new FormGroup({
     email: new FormControl(''),
@@ -26,7 +31,8 @@ export class EmailFormComponent implements OnInit {
   constructor(private formBuilder: FormBuilder,
               private emailService: EmailService,
               private customValidator : FormValidationService,
-              private snackbarService: SnackbarService) {
+              private snackbarService: SnackbarService,
+              public spinnerService: SpinnerService) {
     this.emailForm = this.formBuilder.group({
       email: [
         '',

@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { CustomHttpInterceptorProvider } from './_services/utils/http-interceptor';
+
 import { AppRoutingModule } from './app-routing.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
@@ -32,7 +34,9 @@ import { SnackbarComponent } from './components/snackbar/snackbar.component';
     MatSnackBarModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    CustomHttpInterceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
