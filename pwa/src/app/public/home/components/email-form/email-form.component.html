@@ -3,17 +3,11 @@
   <div class="contact-form">
     <strong class="contact-strong">Envoyez-moi un message :</strong>
     <form [formGroup]="emailForm" 
-          (ngSubmit)="onSubmit(emailForm.value)"
-          id="contactForm" 
-          name="contact-form" 
-          action="sendemail.php" 
-          method="POST">
+          (ngSubmit)="onSubmit(emailForm.value)">
 
       <div class="form-group">
         <label for="email">Email</label>
         <input formControlName="email" 
-               id="email"
-               name="email" 
                type="email" 
                class="form-control"
                autocomplete="off"
@@ -29,9 +23,7 @@
 
       <div class="form-group">
         <label for="subject">Sujet</label>
-        <input formControlName="subject" 
-               id="subject"
-               name="subject" 
+        <input formControlName="subject"
                type="text" 
                class="form-control"
                autocomplete="off"
@@ -46,8 +38,6 @@
       <div class="form-group">
         <label for="body">Message</label>
         <textarea formControlName="body" 
-                  id="body"
-                  name="body" 
                   class="form-control"
                   rows="7"
                   autocomplete="off"

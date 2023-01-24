@@ -31,6 +31,12 @@ npm install aos @types/aos
 ```
 6. &nbsp;&nbsp;*/<ins>LeCabinetDeCuriosites/pwa*</ins> 
 \
+Material Snackbar
+```
+ng add @angular/material
+```
+7. &nbsp;&nbsp;*/<ins>LeCabinetDeCuriosites/pwa*</ins> 
+\
 Lancer serveur local =>
 ```
 ng serve -o

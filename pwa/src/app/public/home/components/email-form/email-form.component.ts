@@ -3,6 +3,7 @@ import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators} from 
 
 import { EmailService } from 'src/app/_services/email.service';
 import { FormValidationService } from 'src/app/_services/form-validation.service';
+import { SnackbarService } from 'src/app/_services/snackbar.service';
 
 
 @Component({
@@ -24,7 +25,8 @@ export class EmailFormComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder,
               private emailService: EmailService,
-              private customValidator : FormValidationService) {
+              private customValidator : FormValidationService,
+              private snackbarService: SnackbarService) {
     this.emailForm = this.formBuilder.group({
       email: [
         '',
@@ -59,13 +61,18 @@ export class EmailFormComponent implements OnInit {
     return this.emailForm.controls;
   }
 
-  onSubmit(emailForm: string) {
+  onSubmit(emailForm: any) {
     this.submitted = true;
     if (this.emailForm.invalid) {
       return;
     }
+    const email = this.emailForm.get('email')?.value;
     this.emailService.sendEmail(emailForm).subscribe((_response: any) => {
-      window.open("https://mailthis.to/confirm", "_blank")
+      this.snackbarService.showNotification(email + ' votre message a bien été envoyé.');
+      this.emailForm.reset();
+      for (let control in this.emailForm.controls) {
+        this.emailForm.controls[control].setErrors(null);
+      }
     })
   }
 
