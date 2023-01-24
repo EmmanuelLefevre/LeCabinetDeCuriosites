@@ -1,0 +1,73 @@
+<div id="email-form"
+     class=""> <!-- Email Form -->
+  <div class="contact-form">
+    <strong class="contact-strong">Envoyez-moi un message :</strong>
+    <form [formGroup]="emailForm" 
+          (ngSubmit)="onSubmit(emailForm.value)"
+          id="contactForm" 
+          name="contact-form" 
+          action="sendemail.php" 
+          method="POST">
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input formControlName="email" 
+               id="email"
+               name="email" 
+               type="email" 
+               class="form-control"
+               autocomplete="off"
+               [ngClass]="{ 'invalid-feedback': submitted && f['email'].errors }">
+      </div>
+      <div *ngIf="submitted && f['email'].errors">
+        <div class="text-alert" *ngIf="f['email'].errors['required']">Veuillez saisir un email!</div>
+        <div class="text-alert" *ngIf="f['email'].errors['email']">Format d'email invalide!</div>
+        <div class="text-alert" *ngIf="f['email'].errors['validEmail']">
+          L'email doit contenir un "@" + nom de domaine!
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Sujet</label>
+        <input formControlName="subject" 
+               id="subject"
+               name="subject" 
+               type="text" 
+               class="form-control"
+               autocomplete="off"
+               [ngClass]="{ 'invalid-feedback': submitted && f['subject'].errors }">
+      </div>
+      <div *ngIf="submitted && f['subject'].errors">
+        <div class="text-alert" *ngIf="f['subject'].errors['required']">Veuillez saisir un sujet!</div>
+        <div class="text-alert" *ngIf="f['subject'].errors['minLength']">Le sujet doit contenir au minimum 3 caractères.</div>
+        <div class="text-alert" *ngIf="f['subject'].errors['maxLength']">Le sujet doit contenir au maximum 25 caractères.</div>
+      </div>
+
+      <div class="form-group">
+        <label for="body">Message</label>
+        <textarea formControlName="body" 
+                  id="body"
+                  name="body" 
+                  class="form-control"
+                  rows="7"
+                  autocomplete="off"
+                  [ngClass]="{ 'invalid-feedback': submitted && f['body'].errors }"></textarea>
+      </div>
+      <div *ngIf="submitted && f['body'].errors">
+        <div class="text-alert" *ngIf="f['body'].errors['required']">Veuillez saisir un message!</div>
+        <div class="text-alert" *ngIf="f['body'].errors['minLength']">Le message doit contenir au minimum 3 caractères.</div>
+        <div class="text-alert" *ngIf="f['body'].errors['maxLength']">Le sujet doit contenir au maximum 250 caractères.</div>
+      </div>
+
+      <div class="button-activity">
+        <button type="submit" 
+           rel="noopener noreferrer"
+           class="link" 
+           role="button"
+           aria-label="bouton envoyer message">Envoyer message
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div> <!-- Email Form End -->
