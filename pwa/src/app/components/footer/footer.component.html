@@ -23,7 +23,12 @@
           </a>
         </li>
         <li>
-          <a href='' target="new"><fa-icon [icon]="faEnvelope"></fa-icon></a>
+          <a [routerLink]="['/']"
+             [fragment]="'email'"
+             aria-label="bouton contact"
+             role="button">
+            <fa-icon [icon]="faEnvelope"
+                     alt="icône enveloppe envoyer message"></fa-icon></a>
         </li>
       </ul>
     </div>

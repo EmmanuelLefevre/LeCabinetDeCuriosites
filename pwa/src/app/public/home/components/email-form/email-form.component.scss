@@ -1,4 +1,4 @@
-#email-form {
+#email {
   margin: auto;
   width: 20em;
   padding: 4vh 0 6vh 0;
@@ -122,26 +122,20 @@
 
 /* ------ Responsive ------ */
 @media screen and (min-width: 768px) {
-  #email-form {
+  #email {
     width: 30em;
   }
 }
 
 @media screen and (min-width: 990px) {
-  #email-form {
+  #email {
     margin-top: 4vh;
   }
 }
 
 @media screen and (min-width: 1350px) {
-  #email-form {
+  #email {
     width: 45em;
     padding: 4vh 0 0 0;
   }
 }
-
-// @media screen and (min-width: 1650px) {
-//   #email-form {
-    
-//   }
-// }
