@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { CustomHttpInterceptorProvider } from './_services/utils/http-interceptor';
@@ -35,7 +36,8 @@ import { SnackbarComponent } from './components/snackbar/snackbar.component';
     BrowserAnimationsModule
   ],
   providers: [
-    CustomHttpInterceptorProvider
+    CustomHttpInterceptorProvider,
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]
 })
