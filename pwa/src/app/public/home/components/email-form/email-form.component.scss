@@ -87,7 +87,7 @@
 }
 
 /*------ Spinner ------*/
-.spinnerContainer {
+.spinner-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,7 +107,7 @@
     height: 8vh;
     border: solid 3px transparent;
     border-radius: 50%;
-    background-image: linear-gradient(var(--bg-color), var(--bg-color)), repeating-conic-gradient(#21D0C1 0%,#FF5EFF 15%,#21D0C1 33%);
+    background-image: linear-gradient(var(--bg-color), var(--bg-color)), repeating-conic-gradient(#21D0C1 0%,var(--bg-color) 15%,#21D0C1 33%);
     background-origin: border-box;
     background-clip: content-box, border-box;
     -webkit-animation: spin 7s linear infinite;
@@ -118,7 +118,6 @@
     }
   }
 }
-
 
 /* ------ Responsive ------ */
 @media screen and (min-width: 768px) {
@@ -133,9 +132,21 @@
   }
 }
 
+@media screen and (min-width: 1080px) {
+  .spinner-container {
+    padding: 0 0 0 18em;
+  }
+}
+
 @media screen and (min-width: 1350px) {
   #email {
     width: 45em;
     padding: 4vh 0 0 0;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .spinner-container {
+    padding: 0 0 0 22em;
   }
 }
