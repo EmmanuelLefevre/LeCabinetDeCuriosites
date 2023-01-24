@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  api: {
+    email : {
+      url:'https://mailthis.to/LeCabinetDeCuriosités'
+    }
+  }
 };
 
 /*

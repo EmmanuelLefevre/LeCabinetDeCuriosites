@@ -9,7 +9,7 @@ import * as AOS from 'aos';
 
 export class AppComponent implements OnInit {
 
-  title = 'pwa';
+  title = 'Le Cabinet de Curiosités';
 
   constructor() {}
 

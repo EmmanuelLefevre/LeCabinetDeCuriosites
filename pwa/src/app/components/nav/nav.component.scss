@@ -3,6 +3,7 @@ header {
   width: 100%;
   color: var(--color-blue);
   background-color: var(--bg-color);
+  z-index: 10000;
   nav {
     -moz-transition: opacity 1s ease;
     -webkit-transition: opacity 1s ease;
