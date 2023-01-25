@@ -19,7 +19,7 @@
       }
       .activity {
         .card {
-          width: 100%;
+          min-width: 20em;
           border: solid 3px var(--border-color-blue);
           &:nth-child(2) {
             margin: 18vh 0 0 0;
