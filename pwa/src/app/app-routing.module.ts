@@ -7,7 +7,6 @@ const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
   anchorScrolling: 'enabled',
   onSameUrlNavigation: "reload",
-  enableTracing: true,
   scrollOffset: [0, 64]
 };
 
