@@ -67,7 +67,7 @@ export class EmailFormComponent implements OnInit {
     return this.emailForm.controls;
   }
 
-  onSubmit(emailForm: any) {
+  onSubmit(emailForm: any): void {
     this.submitted = true;
     if (this.emailForm.invalid) {
       return;
