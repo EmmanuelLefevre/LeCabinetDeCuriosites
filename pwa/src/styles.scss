@@ -12,12 +12,15 @@
   --color-pink2: #b74e91;
   --color-pink3: #3c2c62;
   --color-alert: red;
+  --color-linear1: rgba(94,66,166);
+  --color-linear2: rgba(183,78,145);
   /*---Background---*/
   --bg-color: #001C2C;
   --bg-color-light: #083148;
   --bg-card-color: #3c4887;
   --bg-nav-color: var(--bg-color-light);
   --bg-footer-color: var(--bg-color-light);
+  --bg-linear-color: linear-gradient(45deg, var(--color-linear1) 30%, var(--color-linear2) 100%);
   /*---Text---*/
   --text-color-dark: var(--color-black);
   --text-color-white: var(--color-white);
