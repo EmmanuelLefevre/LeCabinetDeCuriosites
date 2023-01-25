@@ -36,13 +36,18 @@ export class NavComponent implements OnInit {
          this.router.url === '/#email') && window.pageYOffset > 2000) {
       this.liContact.nativeElement.classList.add("active-link");
       this.liWelcome.nativeElement.classList.remove("active-link");
-    } else if(this.router.url === '/club' || this.router.url === '/stage') {
+    } else if(this.router.url === '/club' ||
+              this.router.url === '/stage') {
       this.liWelcome.nativeElement.classList.remove("active-link");
       this.liContact.nativeElement.classList.remove("active-link");
     } else {
       this.liContact.nativeElement.classList.remove("active-link");
       this.liWelcome.nativeElement.classList.add("active-link");
     }
+  }
+  scrollToTop() {
+    window.scrollTo(0, 0);
+    this.router.navigate([]);
   }
 
 }

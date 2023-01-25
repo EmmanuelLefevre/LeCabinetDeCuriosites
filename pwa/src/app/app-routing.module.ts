@@ -6,6 +6,8 @@ import { Error404Component } from './_services/utils/components/error404/error40
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
   anchorScrolling: 'enabled',
+  onSameUrlNavigation: "reload",
+  enableTracing: true,
   scrollOffset: [0, 64]
 };
 

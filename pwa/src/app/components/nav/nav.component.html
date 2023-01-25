@@ -16,7 +16,8 @@
             [routerLinkActiveOptions]="{ exact: true }">
           <a [routerLink]="['/']"
              aria-label="bouton accueil"
-             role="button">Accueil
+             role="button"
+             (click)="scrollToTop()">Accueil
           </a>
         </li>
         <li #contact>
