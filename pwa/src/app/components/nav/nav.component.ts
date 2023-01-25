@@ -47,7 +47,7 @@ export class NavComponent implements OnInit {
   }
   scrollToTop() {
     window.scrollTo(0, 0);
-    this.router.navigate([]);
+    this.router.navigate(['/']);
   }
 
 }
