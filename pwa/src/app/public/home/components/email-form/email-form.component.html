@@ -1,4 +1,4 @@
-<div id="email-form"
+<div id="email"
      class=""> <!-- Email Form -->
   <div class="contact-form">
     <strong class="contact-strong">Envoyez-moi un message :</strong>
@@ -61,3 +61,10 @@
     </form>
   </div>
 </div> <!-- Email Form End -->
+<div *ngIf="spinnerService.visibility | async">
+  <div class="spinner-container">
+    <div class="circle">
+      <fa-icon [icon]="faRobot"></fa-icon>
+    </div>
+  </div>
+</div>

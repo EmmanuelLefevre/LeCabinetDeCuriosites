@@ -1,4 +1,4 @@
-#email-form {
+#email {
   margin: auto;
   width: 20em;
   padding: 4vh 0 6vh 0;
@@ -86,29 +86,67 @@
   text-align: center;
 }
 
+/*------ Spinner ------*/
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vh;
+    height: 8vh;
+    border: solid 3px transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(var(--bg-color), var(--bg-color)), repeating-conic-gradient(#21D0C1 0%,var(--bg-color) 15%,#21D0C1 33%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    -webkit-animation: spin 7s linear infinite;
+    animation: spin 7s linear infinite;
+    fa-icon {
+      font-size: 4vh;
+      color: var(--color-blue);
+    }
+  }
+}
 
 /* ------ Responsive ------ */
 @media screen and (min-width: 768px) {
-  #email-form {
+  #email {
     width: 30em;
   }
 }
 
 @media screen and (min-width: 990px) {
-  #email-form {
+  #email {
     margin-top: 4vh;
   }
 }
 
+@media screen and (min-width: 1080px) {
+  .spinner-container {
+    padding: 0 0 0 18em;
+  }
+}
+
 @media screen and (min-width: 1350px) {
-  #email-form {
+  #email {
     width: 45em;
     padding: 4vh 0 0 0;
   }
 }
 
-// @media screen and (min-width: 1650px) {
-//   #email-form {
-    
-//   }
-// }
+@media screen and (min-width: 1350px) {
+  .spinner-container {
+    padding: 0 0 0 22em;
+  }
+}

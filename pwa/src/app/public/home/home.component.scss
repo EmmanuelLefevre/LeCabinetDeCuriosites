@@ -121,12 +121,9 @@
               img {
                 height: 60%;
                 width: auto;
-              }
-              fa-icon {
-                font-size: 4em;
-                color: var(--color-blue);
                 &:hover {
-                  color: var(--color-pink);
+                  transform: translateY(-6px);
+                  transition: 0.3s;
                 }
               }
             }
