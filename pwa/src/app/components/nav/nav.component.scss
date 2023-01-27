@@ -30,11 +30,15 @@ header {
           a {
             font-family: var(--font-nav);
             font-size: 2em;
+            font-weight: bold;
             text-transform: uppercase;
             -moz-transition: color 0.2s ease;
             -webkit-transition: color 0.2s ease;
             -ms-transition: color 0.2s ease;
             transition: color 0.2s ease;
+            &:link {
+              color: var(--color-blue);
+            }
             span {
               display: none;
             }
