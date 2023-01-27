@@ -22,4 +22,4 @@ cc: ## Clear Angular cache
 
 servx: ## Relaunch Angular with clear cache
 	cd pwa && $(MAKE) ang-relaunch-serv
-.PHONY: cc
+.PHONY: servx
