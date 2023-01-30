@@ -1,7 +1,7 @@
 header {
   position: fixed;
   width: 100%;
-  color: var(--color-blue);
+  color: var(--text-color-blue);
   background-color: var(--bg-color);
   z-index: 10000;
   nav {
@@ -30,14 +30,12 @@ header {
           a {
             font-family: var(--font-nav);
             font-size: 2em;
+            font-weight: bold;
             text-transform: uppercase;
             -moz-transition: color 0.2s ease;
             -webkit-transition: color 0.2s ease;
             -ms-transition: color 0.2s ease;
             transition: color 0.2s ease;
-            span {
-              display: none;
-            }
           }
         }
         .active-link > a {

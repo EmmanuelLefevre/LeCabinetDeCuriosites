@@ -257,6 +257,10 @@
             .inner {
               width: 35em;
               padding: 0 0 1em 0;
+              h3 {
+                width: 100%;
+                text-align: left;
+              }
             }
           }
         }
@@ -289,22 +293,9 @@
 @media screen and (min-width: 1650px) {
   .wrapper {
     #workshop {
-      .full-page {
-        height: 100vh;
-        .logo {
-          margin: 0;
-          padding: 5vh 0 0 0;
-        }
-        .inner {
-          .image-banner {
-            .call-action-scroll {
-              display: flex;
-              .mouse-icon {
-                margin-top: 36em;
-              }
-            }
-          }
-        }
+      .logo {
+        margin: 0;
+        padding: 5vh 0 0 0;
       }
       .inner.immertion {
         h2 {

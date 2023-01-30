@@ -68,9 +68,6 @@
         }
       }
     }
-    .call-action-scroll {
-      display: none;
-    }
   }
   #challenge {
     #title {
@@ -141,6 +138,8 @@
       justify-content: flex-start;
       min-height: 94vh;
       background-image: url("./../../../assets/img/banner-internship.jpg");
+      background-position: center;
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -284,12 +283,6 @@
               font-size: 20px
             }
           }
-        }
-      }
-      .call-action-scroll {
-        display: flex;
-        .mouse-icon {
-          margin-top: 9em;
         }
       }
     }
