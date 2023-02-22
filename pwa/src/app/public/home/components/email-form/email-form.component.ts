@@ -36,7 +36,7 @@ export class EmailFormComponent implements OnInit {
       [
         Validators.required,
         Validators.minLength(3),
-        Validators.maxLength(25)
+        Validators.maxLength(125)
       ]
     ],
     body: [
@@ -44,7 +44,7 @@ export class EmailFormComponent implements OnInit {
       [
         Validators.required,
         Validators.minLength(3),
-        Validators.maxLength(250)
+        Validators.maxLength(500)
       ]
     ]
   });
