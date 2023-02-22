@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   api: {
     email : {
-      url:'https://mailthis.to/LeCabinetDeCuriosités'
+      url:'https://formspree.io/f/mbjeoqky'
     }
   }
 };
