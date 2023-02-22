@@ -13,7 +13,8 @@
       margin-top: 12vh;
       width: 100%;
       h3 {
-        text-transform: uppercase;
+        // text-transform: uppercase;
+        font-variant: small-caps;
         margin: 0 0 3vh 0;
         letter-spacing: 0.05em;
       }
@@ -62,6 +63,7 @@
         padding: 2vh 2vw 4vh 2vw;
         h3 {
           color: var(--text-color-pink);
+          font-variant: small-caps;
         }
         h4, h5 {
           font-family: var(--font-card);
