@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AbstractControl, FormBuilder, Validators, FormGroupDirective} from '@angular/forms';
+import { AbstractControl, FormBuilder, Validators } from '@angular/forms';
 
 import { faRobot} from '@fortawesome/free-solid-svg-icons';
 
@@ -8,7 +8,7 @@ import { FormValidationService } from 'src/app/_services/form-validation.service
 import { SnackbarService } from 'src/app/_services/snackbar.service';
 import { SpinnerService } from 'src/app/_services/spinner.service';
 
-import { IEmail } from './iEmail';
+import { IEmail } from './IEmail';
 
 
 @Component({
@@ -76,5 +76,5 @@ export class EmailFormComponent implements OnInit {
     formDirective.resetForm();
     this.emailForm.reset();
   }
-
+    
 }

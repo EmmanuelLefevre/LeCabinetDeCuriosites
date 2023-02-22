@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, delay } from 'rxjs';
 
 
 @Injectable({
@@ -14,6 +14,7 @@ export class SpinnerService {
 
   show() {
     this.visibility.next(true);
+    delay(800);
   }
 
   hide() {

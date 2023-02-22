@@ -39,6 +39,9 @@ footer {
   }
   .host {
     font-size: 10px;
+    a {
+      cursor: pointer;
+    }
     span {
       font-size: 12px;
       color: var(--text-color-blue);

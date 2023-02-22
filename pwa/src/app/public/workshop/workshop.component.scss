@@ -173,8 +173,9 @@
               margin: 0 0 1em 0;
               font-size: 24px;
               font-weight: bold;
-              text-align: center;
+              text-align: left;
               line-height: 1.2;
+              width: 100%;
             }
             p {
               margin: 0 0 1em 0;
@@ -254,11 +255,10 @@
             .inner {
               display: flex;
               align-items: center;
-              width: 35em;
+              width: 36em;
               padding: 0;
               h3 {
                 width: 100%;
-                text-align: left;
               }
             }
             .image {

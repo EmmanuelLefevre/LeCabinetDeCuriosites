@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { map } from 'rxjs';
 
-import { IEmail } from '../public/home/components/email-form/iEmail';
+import { IEmail } from '../public/home/components/email-form/IEmail';
 
 
 @Injectable({
