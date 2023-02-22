@@ -9,8 +9,7 @@
   --color-white: #ffffff;
   --color-blue: #21D0C1;
   --color-pink: #FF5EFF;
-  --color-pink2: #b74e91;
-  --color-pink3: #3c2c62;
+  --color-pink2: #3c2c62;
   --color-alert: rgba(255, 0, 0, 0.5);
   --color-linear1: rgba(94,66,166);
   --color-linear2: rgba(183,78,145);
@@ -26,7 +25,7 @@
   --text-color-white: var(--color-white);
   --text-color-blue: var(--color-blue);
   --text-color-pink: var(--color-pink);
-  --text-color-nav: var(--color-pink2);
+  --text-color-nav: var(--color-pink);
   --text-color-card: var(--bg-color);
   /*---Buttons---*/
   --button-text-color: var(--color-white);
@@ -37,10 +36,10 @@
   /*---Borders---*/
   --border-color-blue: var(--color-blue);
   --border-color-pink: var(--color-pink);
-  --border-color-nav: var(--color-pink2);
-  --border-bottom-color-nav: var(--color-pink3);
+  --border-color-nav: var(--color-pink);
+  --border-bottom-color-nav: var(--color-pink2);
   /*---Hovers---*/
-  --hover-nav: var(--color-pink2);
+  --hover-nav: var(--color-blue);
 }
 
 /* ------ Semantic Fonts ------ */
@@ -106,7 +105,7 @@ body {
     min-height: 100vh;
     margin-right: auto;
     margin-left: auto;
-    padding: 2vh 0 11em 0;
+    padding: 2vh 0 10.5em 0;
     h1 {
       font-size: 30px;
       color: var(--color-blue);
@@ -120,7 +119,6 @@ body {
       margin: 7vh 0 0 0;
       img {
         width: 130px;
-        margin: 0 0 0 0;
         height: fit-content;
       }
       h1 {
@@ -174,7 +172,7 @@ body {
 @media screen and (min-width: 768px) {
   body {
     .wrapper {
-      padding: 3.5em 0 12em 0;
+      padding: 3.5em 0 11em 0;
       .logo {
         margin: 5vh 0 0 0;
       }

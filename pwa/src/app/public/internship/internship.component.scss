@@ -121,7 +121,7 @@
           }
         }
       }
-      .contact {
+      .inscription-section {
         padding: 0 0 4em 0;
       }
     }
@@ -172,6 +172,9 @@
       }
       .wrapper2 {
         padding: 0;
+        .inscription-section {
+          padding: 0 0 6em 0;
+        }
       }
     }
   }
@@ -198,9 +201,6 @@
           .content {
             padding: 0 3.2em 0 3.2em;
           }
-        }
-        .contact {
-          padding: 3em 0 4em 0;
         }
       }
     }

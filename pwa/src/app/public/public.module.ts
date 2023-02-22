@@ -10,6 +10,7 @@ import { WorkshopComponent } from './workshop/workshop.component';
 import { InternshipComponent } from './internship/internship.component';
 import { MapComponent } from './home/components/map/map.component';
 import { EmailFormComponent } from './home/components/email-form/email-form.component';
+import { ProjectComponent } from './project/project.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { EmailFormComponent } from './home/components/email-form/email-form.comp
     WorkshopComponent,
     InternshipComponent,
     MapComponent,
-    EmailFormComponent
+    EmailFormComponent,
+    ProjectComponent
   ],
   imports: [
     CommonModule,

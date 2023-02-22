@@ -1,9 +1,6 @@
 <header>
   <nav (click)="toggleBurger()"
        (scroll)="scrollHandler($event)">
-    <!-- <div class="nav-logo">
-      <a [routerLink]="['/']">Logo</a>
-    </div> -->
     <div class="burger">
       <fa-icon [icon]="faBars"
                alt="menu hamburger">{{!burgerOpened ? 'menu': 'close'}}
@@ -37,6 +34,12 @@
           <a [routerLink]="['stage']"
              aria-label="bouton stages scientifiques"
              role="button">Stages <br>scientifiques
+          </a>
+        </li>
+        <li [routerLinkActive]="['active-link']">
+          <a [routerLink]="['projet']"
+             aria-label="bouton projet"
+             role="button">Le projet
           </a>
         </li>
       </ul>

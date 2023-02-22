@@ -37,7 +37,8 @@ export class NavComponent implements OnInit {
       this.liContact.nativeElement.classList.add("active-link");
       this.liWelcome.nativeElement.classList.remove("active-link");
     } else if(this.router.url === '/club' ||
-              this.router.url === '/stage') {
+              this.router.url === '/stage' ||
+              this.router.url === '/projet') {
       this.liWelcome.nativeElement.classList.remove("active-link");
       this.liContact.nativeElement.classList.remove("active-link");
     } else {
