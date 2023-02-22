@@ -134,7 +134,7 @@
   }
 }
 
-@media screen and(min-width: 1080px) {
+@media screen and(min-width: 1300px) {
   .wrapper {
     #intro {
       margin-bottom: 4vh;
@@ -159,26 +159,11 @@
           }
         }
         #logo {
-          width: 150px;
+          width: 185px;
         }
       }
       .inner {
         padding: 2vh 6vw 0 3vw;
-        p {
-          // text-align: left;
-        }
-      }
-    }
-  }
-}
-
-@media screen and(min-width: 1300px) {
-  .wrapper {
-    #project {
-      .photo {
-        #logo {
-          width: 185px;
-        }
       }
     }
   }
