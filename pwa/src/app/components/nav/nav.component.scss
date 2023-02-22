@@ -60,6 +60,9 @@ header {
       a {
         display: block !important;
         text-align: center;
+        &:link {
+          color: var(--text-color-blue);
+        }
       }
     }
   }
@@ -105,10 +108,16 @@ header {
               color: rgba(255, 255, 255, 0.35);
               &:hover {
                 color: var(--hover-nav);
+                border-bottom: solid 2px var(--border-color-blue);
               }
               br {
                 display: none;
               }
+            }
+          }
+          .active-link > a {
+            &:hover {
+              color: var(--text-color-nav);
             }
           }
         }
@@ -157,6 +166,9 @@ header {
               font-size: 10.4px;
               padding-bottom: 1.4vh;
               border-bottom: solid 2px var(--border-bottom-color-nav);
+              &:hover {
+                border-image: var(--bg-linear-color2) 1;
+              }
             }
           }
           li:first-child {
@@ -166,7 +178,7 @@ header {
             color: var(--text-color-nav);
             border-style: solid;
             border-bottom: 2px solid transparent;
-            border-image: var(--bg-linear-color) 1;
+            border-image: var(--bg-linear-color) 1 !important;
           }
         }
       }

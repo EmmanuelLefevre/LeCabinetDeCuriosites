@@ -8,12 +8,14 @@
   --color-black: #000000;
   --color-white: #ffffff;
   --color-blue: #21D0C1;
+  // --color-blue: #135a71;
   --color-pink: #FF5EFF;
-  --color-pink2: #b74e91;
-  --color-pink3: #3c2c62;
+  --color-pink2: #3c2c62;
   --color-alert: rgba(255, 0, 0, 0.5);
   --color-linear1: rgba(94,66,166);
   --color-linear2: rgba(255, 94, 255);
+  --color-linear3: rgba(19,90,113);
+  --color-linear4: rgba(33,208,193);
   /*---Background---*/
   --bg-color: #001C2C;
   --bg-color-light: #083148;
@@ -21,6 +23,7 @@
   --bg-nav-color: var(--bg-color-light);
   --bg-footer-color: var(--bg-color-light);
   --bg-linear-color: linear-gradient(45deg, var(--color-linear1) 30%, var(--color-linear2) 100%);
+  --bg-linear-color2: linear-gradient(45deg, var(--color-linear3) 30%, var(--color-linear4) 100%);
   /*---Text---*/
   --text-color-dark: var(--color-black);
   --text-color-white: var(--color-white);
@@ -38,7 +41,7 @@
   --border-color-blue: var(--color-blue);
   --border-color-pink: var(--color-pink);
   --border-color-nav: var(--color-pink);
-  --border-bottom-color-nav: var(--color-pink3);
+  --border-bottom-color-nav: var(--color-pink2);
   /*---Hovers---*/
   --hover-nav: var(--color-blue);
 }
@@ -106,12 +109,12 @@ body {
     min-height: 100vh;
     margin-right: auto;
     margin-left: auto;
-    padding: 2vh 0 11em 0;
+    padding: 2vh 0 10.5em 0;
     h1 {
       font-size: 30px;
       color: var(--color-blue);
       margin: 2vh 0 1vh 0;
-      text-transform: uppercase;
+      font-variant: small-caps;
     }
     h3 {
       font-size: 24px;
@@ -121,7 +124,6 @@ body {
       margin: 7vh 0 0 0;
       img {
         width: 130px;
-        margin: 0 0 0 0;
         height: fit-content;
       }
       h1 {
@@ -175,7 +177,7 @@ body {
 @media screen and (min-width: 768px) {
   body {
     .wrapper {
-      padding: 3.5em 0 12em 0;
+      padding: 3.5em 0 11em 0;
       .logo {
         margin: 5vh 0 0 0;
       }

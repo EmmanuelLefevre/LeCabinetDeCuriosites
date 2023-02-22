@@ -13,7 +13,8 @@
       margin-top: 12vh;
       width: 100%;
       h3 {
-        text-transform: uppercase;
+        // text-transform: uppercase;
+        font-variant: small-caps;
         margin: 0 0 3vh 0;
         letter-spacing: 0.05em;
       }
@@ -27,6 +28,12 @@
           img {
             width: 35%;
             margin-top: -60px;
+          }
+          h3 {
+            color: var(--text-color-blue);
+          }
+          h4 > span {
+            color: var(--text-color-blue);
           }
         }
       }
@@ -54,6 +61,10 @@
       }
       .card-text {
         padding: 2vh 2vw 4vh 2vw;
+        h3 {
+          color: var(--text-color-pink);
+          font-variant: small-caps;
+        }
         h4, h5 {
           font-family: var(--font-card);
         }
@@ -63,9 +74,6 @@
         h5 {
           font-size: 16px;
           font-weight: normal;
-        }
-        h4 > span {
-          color: var(--text-color-pink);
         }
         p {
           margin: 0 0 3vh 0;
@@ -106,6 +114,10 @@
             font-size: 1.8em;
             color: var(--text-color-blue);
             margin-bottom: 1vh;
+          }
+          .contact-email {
+            text-decoration: underline var(--text-color-blue);
+            text-underline-offset: 2px;
           }
           ul.icons {
             display: flex;

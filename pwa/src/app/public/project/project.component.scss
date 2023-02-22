@@ -1,0 +1,200 @@
+.wrapper {
+  width: 100%;
+  background-attachment: fixed;
+  background-image: url("./../../../assets/img/quadrillage.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 15em;
+  #intro {
+    margin: 4vh 0 2vh 0;
+    h1 {
+      margin: 2vh 0 2vh 0;
+    }
+    p {
+      padding: 1vh 8vw;
+    }
+  }
+  #project {
+    .photo {
+      padding: 0 7vw 4vh 7vw;
+      #photo {
+        width: 100%;
+        object-fit: cover;
+      }
+      p {
+        color: var(--text-color-blue);
+        margin: 0.5vh 0 4vh 0;
+        text-align: left;
+        span {
+          color: var(--text-color-white);
+        }
+      }
+      #logo {
+        width: 150px;
+        height: fit-content;
+      }
+    }
+    .inner {
+      padding: 0 8vw;
+      h2 {
+        font-size: 18px;
+        color: var(--text-color-blue);
+        width: 100%;
+        text-align: left;
+        padding-bottom: 0.2em;
+        &:nth-of-type(2) {
+          margin-top: 3vh;
+        }
+        &:nth-of-type(3) {
+          margin-top: 3vh;
+        }
+      }
+      p {
+        width: 100%;
+        text-align: justify;
+      }
+      hr {
+        height: 2vh;
+      }
+    }
+  }
+}
+
+
+/* ------ Responsive ------ */
+@media screen and(min-width: 768px) {
+  .wrapper {
+    // #intro {
+    //   h1 {
+    //     font-size: 35px;
+    //   }
+    // }
+    #project {
+      .photo {
+        padding: 2vh 8vw 6vh 8vw;
+        .photo-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: auto;
+          width: 600px;
+          height: auto;
+          #photo {
+            width: 600px;
+          }
+          p {
+            margin: 1.5vh 0 6vh 0;
+          }
+        }
+        #logo {
+          width: 220px;
+        }
+      }
+      .inner {
+        h2 {
+          font-size: 22.4px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .wrapper {
+    #intro {
+      p {
+        padding: 1vh 15vw;
+      }
+    }
+    #project {
+      .inner {
+        padding: 0 8vw;
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 1080px) {
+  .wrapper {
+    padding-bottom: 17em;
+    #project {
+      .photo {
+        .photo-container {
+          width: 650px;
+          #photo{
+            width: 650px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 1300px) {
+  .wrapper {
+    #intro {
+      margin-bottom: 4vh;
+      padding: 0 6vw;
+      h1 {
+        text-align: left;
+      }
+      p {
+        padding: 1vh 0;
+        text-align: left;
+      }
+    }
+    #project {
+      display: flex;
+      flex-direction: row;
+      .photo {
+        padding: 2vh 3vw 6vh 6vw;
+        .photo-container {
+          width: 100%;
+          #photo {
+            width: 30vw;
+          }
+        }
+        #logo {
+          width: 185px;
+        }
+      }
+      .inner {
+        padding: 2vh 6vw 0 3vw;
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 1650px) {
+  .wrapper {
+    #intro {
+      h1 {
+        font-size: 50px;
+      }
+      p {
+        font-size: 19px;
+      }
+    }
+    #project {
+      .photo {
+        font-size: 19px;
+        #logo {
+          width: 250px;
+          margin-top: 2vh;
+        }
+      }
+      .inner {
+        h2 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}
