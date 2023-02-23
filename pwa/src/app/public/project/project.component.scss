@@ -24,6 +24,7 @@
           object-fit: cover;
         }
         h3 {
+          font-size: unset;
           margin: 0;
           p {
             font-size: 16px;
@@ -190,6 +191,7 @@
         .photo-container {
           h3 p {
             font-size: 19px;
+            margin: 1vh 0 4vh 0;
           }
         }
         #logo {
