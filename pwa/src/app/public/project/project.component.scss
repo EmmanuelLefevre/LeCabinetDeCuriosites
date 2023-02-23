@@ -18,16 +18,22 @@
   #project {
     .photo {
       padding: 0 7vw 4vh 7vw;
-      #photo {
-        width: 100%;
-        object-fit: cover;
-      }
-      p {
-        color: var(--text-color-blue);
-        margin: 0.5vh 0 4vh 0;
-        text-align: left;
-        span {
-          color: var(--text-color-white);
+      .photo-container {
+        #photo {
+          width: 100%;
+          object-fit: cover;
+        }
+        h3 {
+          margin: 0;
+          p {
+            font-size: 16px;
+            color: var(--text-color-blue);
+            margin: 0.5vh 0 4vh 0;
+            text-align: left;
+            span {
+              color: var(--text-color-white);
+            }
+          }
         }
       }
       #logo {
@@ -181,7 +187,11 @@
     }
     #project {
       .photo {
-        font-size: 19px;
+        .photo-container {
+          h3 p {
+            font-size: 19px;
+          }
+        }
         #logo {
           width: 250px;
           margin-top: 2vh;
