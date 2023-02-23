@@ -51,7 +51,11 @@ header {
 .burger-opened:host {
   header {
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0);
+    background-attachment: fixed;
+    background-image: url("./../../../assets/img/burger-ambiance.png");
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 100% 85%;
     backdrop-filter: blur(10px);
     z-index: 10000;
     .nav-links {
