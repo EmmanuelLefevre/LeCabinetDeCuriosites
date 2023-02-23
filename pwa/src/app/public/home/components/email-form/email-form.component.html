@@ -5,7 +5,8 @@
     <form [formGroup]="emailForm"
           #ngForm="ngForm"
           #formDirective="ngForm"
-          (ngSubmit)="onSubmit(formDirective)">
+          (ngSubmit)="onSubmit(formDirective)"
+          aria-label="Formulaire d'email afin de contacter le Cabinet de Curiosités">
 
       <div class="form-group">
         <label for="email">Email</label>
@@ -77,10 +78,9 @@
 
       <div class="button-activity">
         <button type="submit" 
-           rel="noopener noreferrer"
-           class="link" 
-           role="button"
-           aria-label="bouton envoyer message">Envoyer
+                rel="noopener noreferrer"
+                class="link"
+                aria-label="Bouton pour envoyer votre email">Envoyer
         </button>
       </div>
 
