@@ -31,7 +31,7 @@ npm install aos @types/aos
 ```
 6. &nbsp;&nbsp;*/<ins>LeCabinetDeCuriosites/pwa*</ins> 
 \
-Material Snackbar
+Angular material
 ```
 ng add @angular/material
 ```
