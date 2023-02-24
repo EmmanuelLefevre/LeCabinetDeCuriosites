@@ -14,7 +14,7 @@ export class SpinnerService {
 
   show() {
     this.visibility.next(true);
-    delay(800);
+    delay(1200);
   }
 
   hide() {
