@@ -13,7 +13,6 @@ import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
 export class ScrollToTopComponent implements OnInit {
 
   faAngleDoubleUp = faAngleDoubleUp;
-  showExtraClass = true;
 
   showScroll: boolean | undefined;
   showScrollHeight = 200;

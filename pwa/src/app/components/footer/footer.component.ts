@@ -17,7 +17,6 @@ export class FooterComponent implements OnInit {
   faFacebook = faFacebook;
   faEnvelope = faEnvelope;
   faPhoneAlt = faPhoneAlt;
-  showExtraClass = true;
 
   constructor() { }
 

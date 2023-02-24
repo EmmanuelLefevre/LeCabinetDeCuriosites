@@ -14,7 +14,6 @@ export class HomeComponent implements OnInit {
 
   faFacebook = faFacebook;
   faInstagram = faInstagram;
-  showExtraClass = true;
 
   constructor() { }
 
