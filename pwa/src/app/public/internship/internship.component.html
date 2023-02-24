@@ -2,17 +2,19 @@
   <section id="internship"> <!-- Content Section Intro -->
     <div class="inner"> <!-- Inner -->
       
-      <div class="logo"> <!-- Logo -->
+      <div class="logo"
+           aria-label="Logo et titre exprimant le contenu de la page"> <!-- Logo -->
         <a [routerLink]="['/']" 
-           aria-label="lien vers l'accueil" 
-           role="button">
+           aria-label="Lien vers la page d'accueil" 
+           type="button">
           <img src="assets/img/logos/logo-cabinet-curiosites.png"
-               alt="logo cabinet de curiosité"/>
+               alt="logo du cabinet de curiosités"/>
         </a>
         <h1>Exploration <br>Scientifique</h1>
       </div> <!-- Logo End -->
 
-      <div class="internship-card">
+      <div class="internship-card"
+           aria-label="Carte présentant les stages ainsi que leurs tarifs">
         <div class="internship-description">
           <h1>Les stages</h1>
           <h2>Chaque stage est l’occasion de découvrir par le jeu 
@@ -35,12 +37,12 @@
           <h2 class="last-h2">145€ / Stage</h2>
           <p></p>
           <div class="button-activity">
-            <a href="assets/pdf/formulaireContactStage.pdf" 
+            <a href="assets/pdf/formulaireContactStage.pdf"  
+               type="button"
+               aria-label="bouton je m'inscris menant au formulaire pdf téléchargeable"
                target="new" 
                rel="noopener noreferrer" 
-               class="inscription" 
-               aria-label="bouton je m'inscris"
-               role="button">Je m'inscris
+               class="inscription">Je m'inscris
             </a>
           </div>
         </div>
@@ -60,41 +62,50 @@
 
     <div class="wrapper2">  <!-- Card -->
 
-      <section class="challenge"> <!-- Section Internship -->
-        <div class="content" 
+      <section class="challenge"
+               aria-label="Section décrivant plus précisément les stages disponibles actuellement"> <!-- Section Internship -->
+        <div class="content"
+             aria-label="Illustration par une image et du texte du stage défi de la côte"
              data-aos="fade-up"
              data-aos-duration="2000"
              data-aos-delay="200">
           <div class="inner">
-            <div class="div-img hill"></div>
+            <img src="assets/img/internship-hill.jpg"
+                 class="img-internship"
+                 aria-label="Image de deux petits rovers mécanisés en lego technics">
             <h3>Défi de la Côte</h3>
-            <div class="text">Ce stage est un challenge technique,  dans 
-              lequel les jeunes doivent construire, à l'aide de légos techniques, 
-              un véhicule capable de franchir la pente la plus abrupte possible.
-              Ils procèdent par essais-erreurs pour améliorer chacun leur prototype.
-              Ils sont guidés dans leurs choix de fabrication, qui sont l'occasion 
-              d'aborder des notions d'électricité, de moteur, de roues motrices, 
-              d’adhérence, de centre de gravité, de démultiplication...
-              Le record sera t-il battu ?<br>
+            <div class="text" 
+                 aria-label="Texte décrivant le stage défi de la côte">Ce stage est un 
+                 challenge technique,  dans lequel les jeunes doivent construire, à 
+                 l'aide de légos techniques, un véhicule capable de franchir la pente 
+                 la plus abrupte possible. Ils procèdent par essais-erreurs pour améliorer 
+                 chacun leur prototype. Ils sont guidés dans leurs choix de fabrication, 
+                 qui sont l'occasion d'aborder des notions d'électricité, de moteur, de roues 
+                 motrices, d’adhérence, de centre de gravité, de démultiplication...
+                 Le record sera t-il battu ?<br>
               <h5># mécanique, créativité, prototypes, moteurs, engrenages, sans écran
               </h5>
             </div>
           </div>
         </div>
 
-        <div class="content" 
+        <div class="content"
+             aria-label="Illustration par une image et du texte du stage sors du labyrinthe"
              data-aos="fade-up"
              data-aos-duration="2000"
              data-aos-delay="200">
           <div class="inner">
-            <div class="div-img maze"></div>
+            <img src="assets/img/internship-maze.jpg"
+                 class="img-internship"
+                 aria-label="Image d'un rover équipé d'une carte électronique programmable et de capteurs">
             <h3>Sors du Labyrinthe</h3>
-            <div class="text">Les jeunes apprennent à programmer des cartes électroniques, 
-                embarquées sur des robots. Ce stage est un scénario dans lequel les équipes 
-                coopèrent pour trouver une stratégie permettant aux robots de trouver le 
-                chemin de sortie du labyrinthe ! Initiation à l’informatique, à la 
-                programmation embarquée, à la manipulation de robots et de capteurs, à 
-                l'algorithmie, à la logique...<br>
+            <div class="text"
+                 aria-label="Texte décrivant le stage sors du labyrinthe">Les jeunes apprennent 
+                 à programmer des cartes électroniques, embarquées sur des robots. Ce stage 
+                 est un scénario dans lequel les équipes coopèrent pour trouver une stratégie 
+                 permettant aux robots de trouver le chemin de sortie du labyrinthe ! 
+                 Initiation à l’informatique, à la programmation embarquée, à la manipulation 
+                 de robots et de capteurs, à l'algorithmie, à la logique...<br>
               <h5># robotique, programmation, expérimentation, plateau de jeu, stratégie
               </h5>
             </div>
@@ -104,12 +115,12 @@
 
       <section class="inscription-section"> <!-- Section Inscription -->
         <div class="button-activity">
-          <a href="assets/pdf/formulaireContact.pdf" 
-              target="new" 
-              rel="noopener noreferrer" 
-              class="inscription"
-              aria-label="bouton je m'inscris" 
-              role="button">Je m'inscris
+          <a href="assets/pdf/formulaireContactStage.pdf"  
+             type="button"
+             aria-label="bouton je m'inscris menant au formulaire pdf téléchargeable"
+             target="new" 
+             rel="noopener noreferrer" 
+             class="inscription">Je m'inscris
           </a>
         </div>
       </section> <!-- Section Inscription End -->

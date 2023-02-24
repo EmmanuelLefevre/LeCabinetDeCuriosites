@@ -1,12 +1,11 @@
-<div id="email"
-     class=""> <!-- Email Form -->
+<div id="email"> <!-- Email Form -->
   <div class="contact-form">
     <strong class="contact-strong">Posez vos questions :</strong>
     <form [formGroup]="emailForm"
           #ngForm="ngForm"
           #formDirective="ngForm"
           (ngSubmit)="onSubmit(formDirective)"
-          aria-label="Formulaire d'email afin de contacter le Cabinet de Curiosités">
+          aria-label="Formulaire de saisie utilisateur">
 
       <div class="form-group">
         <label for="email">Email</label>

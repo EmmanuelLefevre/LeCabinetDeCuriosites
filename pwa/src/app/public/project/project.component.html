@@ -1,5 +1,6 @@
 <div class="wrapper"> <!-- Main Wrapper -->
-  <section id="intro"> <!-- Content Intro Section  -->
+  <section id="intro"
+           aria-label="Section de présentation du Cabinet de Curiosités"> <!-- Content Intro Section  -->
     <h1>Le Cabinet de Curiosités</h1>
     <p>Le Cabinet de Curiosités est un club d’exploration numérique et scientifique. 
       Sa raison d'être est d'intéresser les jeunes aux sciences, en animant des 
@@ -11,18 +12,24 @@
 
   <section id="project"> <!-- Project Section -->
 
-    <section class="photo"> <!-- Photo Section -->
+    <section class="photo"
+             aria-label="Section de la photo de Nicolas Clément"> <!-- Photo Section -->
       <div class="photo-container">
         <img id="photo" src="assets/img/project-portrait.jpg" 
              alt="photo de Nicolas Clément">
         <h3><p>Nicolas Clément<br><span>Le Cabinet de Curiosités</span></p></h3>
       </div>
-      <img id="logo" src="assets/img/logos/logo-cabinet-curiosites-bleu.png" 
-           alt="logo du cabinet de curiosité">
+      <a [routerLink]="['/']" 
+         aria-label="Lien vers la page d'accueil" 
+         type="button">
+        <img id="logo" src="assets/img/logos/logo-cabinet-curiosites-bleu.png" 
+             alt="logo du cabinet de curiosité">
+      </a>
     </section> <!-- Photo Section End -->
 
     <main> <!-- Main -->
-      <section class="inner"> <!-- Main Inner Section -->
+      <section class="inner" 
+               aria-label="Section principal présentant les enjeux et objectifs du Cabinet de Curiosités"> <!-- Main Inner Section -->
         <h2>Pourquoi la robotique ?</h2>
         <p>Donner goût aux sciences et encourager les talents, par le jeu et 
           l’expérimentation. Programme ambitieux du Cabinet de Curiosités !

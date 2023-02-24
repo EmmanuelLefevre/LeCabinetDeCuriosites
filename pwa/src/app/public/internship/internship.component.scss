@@ -89,18 +89,12 @@
             font-size: 16px;
             color: rgba(255, 255, 255, 0.55);
             line-height: 1.5;
-            .div-img {
+            .img-internship {
               border-radius: 10px;
               height: 25em;
               overflow: hidden;
               background-size: cover;
               width: 20em;
-            }
-            .div-img.hill {
-              background-image: url("./../../../assets/img/internship-hill.jpg");
-            }
-            .div-img.maze {
-              background-image: url("./../../../assets/img/internship-maze.jpg");
             }
             h3 {
               color: var(--text-color-blue);
@@ -302,7 +296,7 @@
               font-size: 28px;
             }
             .inner {
-              .div-img {
+              .img-internship {
                 height: 30em;
                 width: 25em;
               }

@@ -8,6 +8,7 @@ import { CustomHttpInterceptorProvider } from './_services/utils/http-intercepto
 import { AppRoutingModule } from './app-routing.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
@@ -32,7 +33,8 @@ import { SnackbarComponent } from './components/snackbar/snackbar.component';
     HttpClientModule,
     FontAwesomeModule,
     MatSnackBarModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTooltipModule
   ],
   providers: [
     CustomHttpInterceptorProvider

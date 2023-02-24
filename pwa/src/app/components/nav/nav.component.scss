@@ -3,7 +3,7 @@ header {
   width: 100%;
   color: var(--text-color-blue);
   background-color: var(--bg-color);
-  z-index: 10000;
+  z-index: 999;
   nav {
     -moz-transition: opacity 1s ease;
     -webkit-transition: opacity 1s ease;
@@ -57,7 +57,7 @@ header {
     background-repeat: no-repeat;
     background-size: 100% 85%;
     backdrop-filter: blur(10px);
-    z-index: 10000;
+    z-index: 999;
     .nav-links {
       display: block !important;
       flex: none !important;
@@ -82,7 +82,7 @@ header {
     width: 100%;
     background-color: var(--bg-nav-color) !important;
     backdrop-filter: none !important;
-    z-index: 10000;
+    z-index: 999;
     .burger {
       display: none;
     }
@@ -113,6 +113,9 @@ header {
               &:hover {
                 color: var(--hover-nav);
                 border-bottom: solid 2px var(--border-color-blue);
+              }
+              &:focus-visible {
+                outline: double 1px var(--color-white);
               }
               br {
                 display: none;

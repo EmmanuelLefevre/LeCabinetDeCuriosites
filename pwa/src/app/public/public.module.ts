@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms'; 
 
+import { ReactiveFormsModule } from '@angular/forms'; 
 import { PublicRoutingModule } from './public-routing.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { HomeComponent } from './home/home.component';
 import { WorkshopComponent } from './workshop/workshop.component';
@@ -26,7 +27,8 @@ import { ProjectComponent } from './project/project.component';
     CommonModule,
     PublicRoutingModule,
     FontAwesomeModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTooltipModule
   ]
 })
 export class PublicModule { }

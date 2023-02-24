@@ -1,14 +1,19 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, ViewEncapsulation } from '@angular/core';
+// Add ViewEncapsulation for resolve problems with loading custom scss .mat-tooltip-scroll-to-top in style.scss
 import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-scroll-to-top',
   templateUrl: './scroll-to-top.component.html',
-  styleUrls: ['./scroll-to-top.component.scss']
+  styleUrls: ['./scroll-to-top.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
+
 export class ScrollToTopComponent implements OnInit {
 
   faAngleDoubleUp = faAngleDoubleUp;
+  showExtraClass = true;
 
   showScroll: boolean | undefined;
   showScrollHeight = 200;

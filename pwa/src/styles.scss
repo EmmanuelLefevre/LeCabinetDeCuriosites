@@ -8,7 +8,6 @@
   --color-black: #000000;
   --color-white: #ffffff;
   --color-blue: #21D0C1;
-  // --color-blue: #135a71;
   --color-pink: #FF5EFF;
   --color-pink2: #3c2c62;
   --color-alert: rgba(255,0,0,0.5);
@@ -171,6 +170,19 @@ body {
       }
     }
   }
+}
+
+/* ------ Tooltip ------ */
+.mat-tooltip,
+.mat-tooltip-scroll-to-top,
+.mat-tooltip-social {
+  font-size: 12px !important;
+  color: var(--text-color-blue);
+  background-color: var(--bg-color-light);
+  border: 1px solid var(--border-color-blue);
+}
+.mat-tooltip {
+  margin-bottom: 2px !important;
 }
 
 /* ------ Responsive ------ */

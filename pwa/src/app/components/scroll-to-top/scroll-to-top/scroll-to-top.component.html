@@ -1,5 +1,11 @@
 <button [ngClass]="{'button-scroll--show': showScroll}"
         (click)="scrollToTop()"
-        class="button-scroll">
+        type="button"
+        aria-label="Bouton pour revenir en haut de la page"
+        class="button-scroll"
+        matTooltip="Haut de page"
+        matTooltipPosition="left"
+        matTooltipShowDelay="200"
+        matTooltipClass="'mat-tooltip-scroll-to-top': showExtraClass">
   <fa-icon [icon]="faAngleDoubleUp"></fa-icon>
 </button>

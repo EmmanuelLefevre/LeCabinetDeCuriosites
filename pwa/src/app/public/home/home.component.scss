@@ -13,7 +13,6 @@
       margin-top: 12vh;
       width: 100%;
       h3 {
-        // text-transform: uppercase;
         font-variant: small-caps;
         margin: 0 0 3vh 0;
         letter-spacing: 0.05em;
@@ -258,7 +257,7 @@
 @media screen and (min-width: 1650px) {
   .wrapper {
     #intro {
-      .full-page {
+      .first-content {
         height: 100vh;
         .inner {
           margin-top: 15vh;

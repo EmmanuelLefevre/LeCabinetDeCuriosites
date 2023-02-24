@@ -5,36 +5,44 @@
         <li>
           <a href="https://www.facebook.com/CabinetCuriositesAngouleme/" 
              target="new"
-             aria-label="lien vers Facebook" 
-             role="button">
+             aria-label="lien menant vers la page Facebook du Cabinet de Curiosités" 
+             type="button"
+             matTooltip="Lien Facebook"
+             matTooltipPosition="above"
+             matTooltipShowDelay="200"
+             matTooltipClass="'mat-tooltip': showExtraClass">
             <fa-icon [icon]="faFacebook"
-                     alt="icône Facebook Cabinet de Curiosites">
-            </fa-icon>
-          </a>
+                     alt="icône menant vers la page Facebook du Cabinet de Curiosités"></fa-icon></a>
         </li>
         <li>
           <a href="https://www.instagram.com/le_cabinet_curiosites/" 
              target="new"
-             aria-label="lien vers Instagram" 
-             role="button">
+             aria-label="lien menant vers la page Instagram du Cabinet de Curiosités" 
+             type="button"
+             matTooltip="Lien Instagram"
+             matTooltipPosition="above"
+             matTooltipShowDelay="200">
             <fa-icon [icon]="faInstagram"
-                     alt="icône Insta Cabinet de Curiosites">
-            </fa-icon>
-          </a>
+                     alt="icône menant vers la page Instagram du Cabinet de Curiosités"></fa-icon></a>
         </li>
         <li>
           <a [routerLink]="['/']"
              [fragment]="'email'"
-             aria-label="bouton contact"
-             role="button">
+             aria-label="lien vers le formulaire de contact suur la page d'accueil"
+             type="button"
+             matTooltip="Lien Formulaire Email"
+             matTooltipPosition="above"
+             matTooltipShowDelay="200">
             <fa-icon [icon]="faEnvelope"
-                     alt="icône enveloppe envoyer message"></fa-icon></a>
+                     alt="icône vers le formulaire de contact suur la page d'accueil"></fa-icon></a>
         </li>
       </ul>
     </div>
   </div>
   <a>©2023 <a href="https://www.societe.com/societe/makerspot-918065210.html" 
               target="new"
+              title="Le Cabinet de curiosités par Makerspot"
+              aria-label="Lien vers le site société.com dispensant les infos sur la société Makerspot"
               class="owner">Le Cabinet de curiosités par Makerspot<br></a> - 
     All rights reserved.</a>
   <br>SARL unipersonnelle, capital: 2000€
@@ -42,14 +50,18 @@
   <a class="host">
     <br>Site développé par 
     <a href="https://www.emmanuellefevre.com/" 
+       title="Emmanuel Lefevre"
+       aria-label="Lien vers le portfolio du développeur du site"
        target="new"><span>Emmanuel Lefevre</span></a> 
        et hébergé par 
     <a href="https://www.o2switch.fr/"
+       title="o2switch"
+       aria-label="Lien vers le site de l'hébergeur o2switch"
        target="new"><span>o2switch</span></a> 
       Chemin des Pardiaux 63000 Clermont-Ferrand.
     <br>
     <fa-icon [icon]="faPhoneAlt"
-             alt="icône globe">
+             alt="icône pour agrémenter le numéro de téléphone de l'hébergeur du site">
     </fa-icon> 0 805 080 426
   </a>
 </footer>

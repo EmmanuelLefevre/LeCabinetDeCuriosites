@@ -1,9 +1,10 @@
 <header>
   <nav (click)="toggleBurger()"
-       (scroll)="scrollHandler($event)">
+       (scroll)="scrollHandler($event)"
+       aria-label="élément de navigation du site">
     <div class="burger">
       <fa-icon [icon]="faBars"
-               alt="menu hamburger">{{!burgerOpened ? 'menu': 'close'}}
+               alt="icône menu hamburger pour le format mobile">{{!burgerOpened ? 'menu': 'close'}}
       </fa-icon>
     </div>
     <div class="nav-links">
@@ -12,34 +13,34 @@
             [routerLinkActive]="['active-link']"
             [routerLinkActiveOptions]="{ exact: true }">
           <a [routerLink]="['/']"
-             aria-label="bouton accueil"
-             role="button"
+             aria-label="bouton vers la page accueil"
+             type="button"
              (click)="scrollToTop()">Accueil
           </a>
         </li>
         <li #contact>
           <a [routerLink]="['/']"
              [fragment]="'contact'"
-             aria-label="bouton contact"
-             role="button">Contact
+             aria-label="bouton vers la page contact"
+             type="button">Contact
           </a>
         </li>
         <li [routerLinkActive]="['active-link']">
           <a [routerLink]="['club']"
-             aria-label="bouton club de robotique"
-             role="button">Club <br>de robotique
+             aria-label="bouton vers la page club de robotique"
+             type="button">Club <br>de robotique
           </a>
         </li>
         <li [routerLinkActive]="['active-link']">
           <a [routerLink]="['stage']"
-             aria-label="bouton stages scientifiques"
-             role="button">Stages <br>scientifiques
+             aria-label="bouton vers la page stages scientifiques"
+             type="button">Stages <br>scientifiques
           </a>
         </li>
         <li [routerLinkActive]="['active-link']">
           <a [routerLink]="['projet']"
-             aria-label="bouton projet"
-             role="button">Le projet
+             aria-label="bouton vers la page projet"
+             type="button">Le projet
           </a>
         </li>
       </ul>

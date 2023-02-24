@@ -2,21 +2,24 @@
 
   <section id="intro"> <!-- Intro Section -->
 
-    <div class="full-page">
+    <section class="first-content">
 
-      <div class="logo"> <!-- Logo -->
+      <div class="logo"
+           aria-label="Logo et titre exprimant le contenu de la page"> <!-- Logo -->
         <img src="assets/img/logos/logo-cabinet-curiosites.png"
-             alt="logo cabinet de curiosité"/> 
+             alt="logo cabinet de curiosités"/> 
         <div>
           <h1>Le Cabinet de Curiosités</h1>
           <h3>Exploration numérique et scientifique</h3>
         </div>
       </div> <!-- Logo End -->
   
-      <div class="inner"> <!-- Div Inner -->
+      <section class="inner"
+               aria-label="Section présentant les différentes activités du Cabinet de Curiosités"> <!-- Section Inner -->
         <div class="activity animate__animated animate__flipInX">
   
-          <div class="card">
+          <div class="card"
+               aria-label="Carte présentant le club de robotique">
             <img src="assets/img/card-workshop.png"
                  class="card-img"
                  alt="pictogramme de robot d'exploration de planètes"/>
@@ -31,20 +34,21 @@
             </div>
             <div class="button-activity">
               <a href="assets/pdf/formulaireContactAtelier.pdf" 
+                 type="button"
+                 aria-label="bouton je m'inscris menant au formulaire pdf téléchargeable"
                  target="new" 
                  rel="noopener noreferrer"
-                 class="inscription" 
-                 role="button"
-                 aria-label="bouton je m'inscris">Je m'inscris
+                 class="inscription">Je m'inscris
               </a>
               <a [routerLink]="['club']"
-                 class="link" 
-                 role="button"
-                 aria-label="bouton en savoir plus">En savoir plus
+                 type="button"
+                 aria-label="bouton en savoir plus menant à la page club"
+                 class="link">En savoir plus
               </a>
             </div>                            
           </div>
-          <div class="card">
+          <div class="card"
+               aria-label="Carte présentant les stages scientifiques proposés">
             <img src="assets/img/card-internship.png"
                  class="card-img"
                  alt="image rover"/>
@@ -59,37 +63,38 @@
               <h5>Stage 3 demi-journées</h5>
             </div>
             <div class="button-activity">
-              <a href="assets/pdf/formulaireContactStage.pdf" 
-                  target="new" 
-                  rel="noopener noreferrer" 
-                  role="button"
-                  class="inscription"
-                  aria-label="bouton je m'inscris">Je m'inscris
+              <a href="assets/pdf/formulaireContactStage.pdf"  
+                 type="button"
+                 aria-label="bouton je m'inscris menant au formulaire pdf téléchargeable"
+                 target="new"
+                 rel="noopener noreferrer"
+                 class="inscription">Je m'inscris
               </a>
               <a [routerLink]="['stage']" 
-                  class="link" 
-                  role="button"
-                  aria-label="bouton en savoir plus">En savoir plus
+                 type="button"
+                 aria-label="bouton en savoir plus menant à la page stage"
+                 class="link">En savoir plus
               </a>
             </div>
           </div>
                
         </div>
-      </div> <!-- Div Inner End -->
+      </section> <!-- Section Inner End -->
       
-    </div>
+    </section>
 
-    <div class="inner"> <!-- Image Banner -->
+    <section class="inner"> <!-- Image Banner -->
       <div class="image-banner">
         <img src="assets/img/banner-home.jpg"
-             alt="photo de plusieurs rovers programmables">
+             alt="photo d'un rover programmable et de différentes cartes de programmation type Arduino/Raspberry">
       </div>
-    </div> <!-- Image Banner End -->
+    </section> <!-- Image Banner End -->
                         
-    <div class="inner color-fade"> <!-- Activity Cards -->
+    <section class="inner color-fade"> <!-- Activity Cards -->
       <div class="activity2">
 
-        <div class="card">
+        <div class="card"
+             aria-label="carte explicative des activités des ateliers">
           <img src="assets/img/card-computer.png"
                class="card-img"
                alt="image ordinateur"/>
@@ -106,15 +111,16 @@
           </div>
           <div class="button-activity">
             <a href="assets/pdf/informationsComplementaires.pdf" 
-                target="new" 
-                rel="noopener noreferrer" 
-                class="inscription"
-                aria-label="bouton en savoir plus" 
-                role="button">En savoir plus
+               type="button"
+               aria-label="Bouton en savoir plus menant au formulaire pdf d'informations complémentaires"
+               target="new" 
+               rel="noopener noreferrer" 
+               class="inscription">En savoir plus
             </a>
           </div>                            
         </div>  
-        <div class="card">
+        <div class="card"
+             aria-label="carte explicative des animations de groupes">
           <img src="assets/img/card-rubik-cube.png" 
                class="card-img"
                alt="image de rubik cube"/>
@@ -128,48 +134,59 @@
           </div>
           <div class="button-activity">
             <a href="assets/pdf/informationsComplementaires.pdf" 
-                target="new" 
-                rel="noopener noreferrer" 
-                class="inscription"
-                aria-label="bouton en savoir plus">En savoir plus
+               type="button"
+               aria-label="Bouton en savoir plus menant au formulaire pdf d'informations complémentaires"
+               target="new" 
+               rel="noopener noreferrer"
+               class="inscription">En savoir plus
             </a>
           </div>                           
         </div>
 
       </div>
-    </div>  <!-- Activity Cards End -->
+    </section>  <!-- Activity Cards End -->
 
   </section> <!-- Section Intro End-->
             
-  <section id="contact"> <!-- Section Contact -->
+  <section id="contact"
+           aria-label="Section du formulaire de contact par email et du plan d'accès aux locaux"> <!-- Section Contact -->
     <div class="inner"> <!-- Div Inner -->
 
       <h1>Contact</h1>
       <div class="split">
         <section class="social">
-          <ul class="contact">
+          <ul class="contact"
+              aria-label="Informations adresse et téléphone du Cabinet de Curiosités">
             <li><h2 class="first-h2">Le Cabinet de Curiosités</h2></li>
             <li><h2>50 rue Bourlion<br/> 16160 Gond-Pontouvre</h2></li>
             <li><h2 class="contact-email">contact@cabinet-curiosites.fr</h2></li>
             <li><h2>06 75 87 67 34</h2></li>
-            <li>
+            <li aria-label="Icônes menant vers les liens sociaux du Cabinet de Curiosités">
               <ul class="icons">
                 <li>
                   <a href="https://www.facebook.com/CabinetCuriositesAngouleme/" 
+                     type="button"
                      target="new"
-                     aria-label="lien vers Facebook" 
-                     role="button">
+                     aria-label="icône menant vers la page Facebook du Cabinet de Curiosités">
                     <img src="assets/img/logos/logoFb.png" 
-                         alt="icône Facebook Cabinet de Curiosites">
+                         alt="icône Facebook Cabinet de Curiosites"
+                         matTooltip="Lien Facebook"
+                         matTooltipPosition="left"
+                         matTooltipShowDelay="200"
+                         matTooltipClass="'mat-tooltip-social': showExtraClass">
                   </a>
                 </li>
                 <li>
                   <a href="https://www.instagram.com/le_cabinet_curiosites/" 
+                     type="button"
                      target="new"
-                     aria-label="lien vers Instagram" 
-                     role="button">
+                     aria-label="icône menant vers la page Instagram du Cabinet de Curiosités">
                     <img src="assets/img/logos/logoInsta.png" 
-                         alt="icône Instagram Cabinet de Curiosites">
+                         alt="icône Instagram Cabinet de Curiosites"
+                         matTooltip="Lien Instagram"
+                         matTooltipPosition="right"
+                         matTooltipShowDelay="200"
+                         matTooltipClass="'mat-tooltip-social': showExtraClass">
                   </a>
                 </li>
               </ul>
@@ -182,7 +199,7 @@
       </div>
 
     </div> <!-- Inner End -->
-    <app-email-form></app-email-form> <!-- Email Form -->
+    <app-email-form aria-label="Formulaire d'email afin de contacter le Cabinet de Curiosités"></app-email-form> <!-- Email Form -->
   </section>  <!-- Section Contact End -->
 
 </div> <!-- Main Wrapper End -->

@@ -2,12 +2,13 @@
 
   <section id="workshop"> <!-- Section Workshop -->
 
-    <div class="logo"> <!-- Banner -->
+    <div class="logo"
+         aria-label="Logo et titre exprimant le contenu de la page"> <!-- Banner -->
       <a [routerLink]="['/']" 
-          aria-label="section introduction" 
-          role="button">
+         aria-label="Lien vers la page d'accueil" 
+         type="button">
         <img src="assets/img/logos/logo-cabinet-curiosites.png"
-              alt="logo cabinet de curiosité"/>
+             alt="logo du cabinet de curiosités"/>
       </a>
       <h1>Club de Robotique</h1>
     </div> <!-- Banner End -->
@@ -15,16 +16,17 @@
     <div class="inner"> <!-- Image -->
       <div class="image-banner" >
         <img src="assets/img/banner-workshop.jpg"
-              alt="photo d'un rover montant une côte et d'un rover de face">
+             alt="photo d'un rover montant une côte et d'un rover de face">
       </div>
     </div> <!-- Image End -->
 
-    <div class="inner immersion"> <!-- Immersion -->
+    <section class="inner immersion"> <!-- Section Immersion -->
       <h2>Immersion dans le monde 
       <br>des sciences et du numérique</h2>			
       <div class="workshop-home"> <!-- Home -->
         <div class="workshop-description"> <!-- Description -->
-          <div class="workshop-text">
+          <div class="workshop-text"
+               aria-label="Texte descriptif des ateliers proposés par le cabinet de curiosités">
             <h3>Ateliers ludiques et pédagogiques</h3>                        
             <h5>Le club de robotique propose des ateliers d’exploration 
             <span>scientifique et numérique</span>, dans un format ludique,
@@ -47,10 +49,11 @@
           <div class="workshop-img">	
             <img src="assets/img/banner-workshop-local.jpg" 
                  width="100%" 
-                 alt="photo de l'intérieur' des locaux"/>
+                 alt="photo de l'intérieur des locaux du cabinet de curiosités"/>
           </div>
         </div> <!-- Description End -->						
-        <div class="workshop-card"> <!-- Info -->
+        <div class="workshop-card"
+             aria-label="carte d'infos et de tarifs des ateliers"> <!-- Info -->
           <div class="info-card-info">
             <img src="assets/img/card-workshop.png"
                  alt="pictogramme de robot d'exploration de planètes"
@@ -66,18 +69,18 @@
             <h4>200€ / trimestre (10 ateliers + 1 bonus)</h4>
             <p></p>																					
             <div class="button-activity">
-              <a href="assets/pdf/formulaireContactAtelier.pdf" 
-                target="new" 
-                rel="noopener noreferrer" 
-                class="inscription"
-                aria-label="bouton je m'inscris" 
-                role="button">Je m'inscris
+              <a href="assets/pdf/formulaireContactAtelier.pdf"  
+                 type="button"
+                 aria-label="bouton je m'inscris menant au formulaire pdf téléchargeable"
+                 target="new" 
+                 rel="noopener noreferrer"
+                 class="inscription">Je m'inscris
               </a>
             </div>
           </div>                 
         </div> <!-- Info End -->
       </div> <!-- Home End -->
-    </div> <!-- Immersion End -->
+    </section> <!-- Section Immersion End -->
 
   </section> <!-- Section Workshop End -->
                     
@@ -90,9 +93,10 @@
   <section> <!-- Section Card -->
     <div class="wrapper"> <!-- Section Wrapper -->
 
-      <section> <!-- Mechanics Makes Sense -->
+      <section aria-label="Section la mécanique c'est très logique"> <!-- Mechanics Makes Sense -->
         <div class="content">
-          <div class="inner" 
+          <div class="inner"
+               aria-label="Texte décrivant les activités mécaniques" 
                data-aos="fade-right"
                data-aos-duration="3000"
                data-aos-delay="300">
@@ -108,16 +112,19 @@
             <h5># robotique, créativité, prototypes, essais-erreurs, 
                 assemblage, moteurs, sans écran</h5>
           </div>
-          <div class="image img-mechanic"
+          <img src="assets/img/workshop-mechanical.jpg"
+               class="image img-mechanic"
+               aria-label="Image présentant une personne se servant de briques type technics"
                data-aos="opacity"
                data-aos-duration="3000"
-               data-aos-delay="700"></div>
+               data-aos-delay="700">
         </div>
       </section> <!-- Mechanics Makes Sense End -->
               
-      <section> <!-- Electricity Survey -->
+      <section aria-label="Section enquête sur l'électricité"> <!-- Electricity Survey -->
         <div class="content"> 
-          <div class="inner" 
+          <div class="inner"
+               aria-label="Texte décrivant comment utiliser et comprendre l'électricité" 
                data-aos="fade-right"
                data-aos-duration="3000"
                data-aos-delay="300">
@@ -131,16 +138,19 @@
             <h5># électronique, champ magnétique, expérimentation, fabrication, 
                 sciences, sans écran</h5>
           </div>
-          <div class="image img-electronic"
+          <img src="assets/img/workshop-electronic.jpg"
+               class="image img-electronic"
+               aria-label="Image d'une breadboard avec sa led et sa résistance"
                data-aos="opacity"
                data-aos-duration="3000"
-               data-aos-delay="700"></div>
+               data-aos-delay="700">
         </div>
       </section> <!-- Electricity Survey End -->    
 
-      <section> <!-- Computer Programmming -->
+      <section aria-label="Section sur la programmation informatique"> <!-- Computer Programmming -->
         <div class="content"> 
-          <div class="inner" 
+          <div class="inner"
+               aria-label="Texte décrivant diverses applications de cartes programmables" 
                data-aos="fade-right"
                data-aos-duration="3000"
                data-aos-delay="100">
@@ -154,16 +164,19 @@
                 mécanismes
             </h5>
           </div>
-          <div class="image img-programming"
+          <img src="assets/img/workshop-programming.jpg"
+               class="image img-programming"
+               aria-label="Image d'un écran présentant un terminal de commande Linux"
                data-aos="opacity"
                data-aos-duration="3000"
-               data-aos-delay="700"></div>
+               data-aos-delay="700">
         </div>         
       </section> <!-- Computer Programmming End -->
                 
-      <section> <!-- Custom Manufacturing -->
+      <section aria-label="Section sur la fabrication sur mesure"> <!-- Custom Manufacturing -->
         <div class="content">
-          <div class="inner" 
+          <div class="inner"
+               aria-label="Texte décrivant la conception de pièce assistée par ordinateur" 
                data-aos="fade-right"
                data-aos-duration="3000"
                data-aos-delay="300">
@@ -179,10 +192,12 @@
                 fabrication
             </h5>
           </div>
-          <div class="image img-manufacturing"
+          <img src="assets/img/workshop-manufacturing.jpg"
+               class="image img-manufacturing"
+               aria-label="Image d'une imprimante 3D imprimant une pièce"
                data-aos="opacity"
                data-aos-duration="3000"
-               data-aos-delay="700"></div>
+               data-aos-delay="700">
         </div>
       </section> <!-- Custom Manufacturing End -->
 
