@@ -1,0 +1,34 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://www.cabinet-curiosites.fr/</loc>
+    <lastmod>2023-02-23T10:46:50+00:00</lastmod>
+    <changefreq>Monthly</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://www.cabinet-curiosites.fr/#contact</loc>
+    <lastmod>2023-02-23T10:46:50+00:00</lastmod>
+    <changefreq>Monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.cabinet-curiosites.fr/club</loc>
+    <lastmod>2023-02-23T10:46:50+00:00</lastmod>
+    <changefreq>Monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.cabinet-curiosites.fr/stage</loc>
+    <lastmod>2023-02-23T10:46:50+00:00</lastmod>
+    <changefreq>Monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.cabinet-curiosites.fr/projet</loc>
+    <lastmod>2023-02-23T10:46:50+00:00</lastmod>
+    <changefreq>Monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>

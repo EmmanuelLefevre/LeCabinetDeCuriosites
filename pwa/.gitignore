@@ -37,7 +37,6 @@ yarn-error.log
 testem.log
 /typings
 .htaccess
-environment.prod.ts
 
 # System files
 .DS_Store

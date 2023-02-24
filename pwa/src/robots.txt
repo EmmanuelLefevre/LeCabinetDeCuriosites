@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /#contact
+Allow: /club
+Allow: /stage
+Allow: /projet
+
+#Sitemap
+Sitemap: https://www.cabinet-curiosites.fr/sitemap.xml
