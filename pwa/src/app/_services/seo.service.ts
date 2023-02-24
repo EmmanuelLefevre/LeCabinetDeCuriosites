@@ -14,21 +14,14 @@ export class SeoService {
   public setMetaDescription(description: string) {
     this.meta.updateTag({
         name: 'description',
-        description: description
-    });
-  }
-
-  public setMetaDescription2(description2: string) {
-    this.meta.updateTag({
-        name: 'description2',
-        description2: description2
+        content: description
     });
   }
 
   public setMetaKeywords(keywords: string) {
     this.meta.updateTag({
         name: 'keywords',
-        keywords: keywords
+        content: keywords
     });
   }
 
@@ -36,6 +29,13 @@ export class SeoService {
     this.meta.updateTag({
         name: 'name',
         content: name
+    });
+  }
+
+  public setMetaColorTheme(colorValue: string) {
+    this.meta.updateTag({
+        name: 'theme-color',
+        content: colorValue
     });
   }
 

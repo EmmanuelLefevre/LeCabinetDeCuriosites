@@ -11,7 +11,8 @@ export const environment = {
   },
   application: {
     name:'Le Cabinet de Curiosités',
-    version:'Angular 13.2.0'
+    version:'Angular 13.2.0',
+    colorTheme:'#083148'
   }
 };
 
