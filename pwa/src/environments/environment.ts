@@ -11,8 +11,7 @@ export const environment = {
   },
   application: {
     name:'Le Cabinet de Curiosités',
-    version:'Angular 13.2.0',
-    fontawesome:'Font Awesome 6.2.1'
+    version:'Angular 13.2.0'
   }
 };
 

@@ -22,39 +22,39 @@ export class HomeComponent implements OnInit {
   // SEO
   name = environment.application.name;
   version = environment.application.version;
-  fontawesome = environment.application.fontawesome;
 
   features: Array<IFeature> | undefined;
 
   constructor(private seoService: SeoService) { 
 
-    const content = `Cette application est développé en ${this.version} et met en oeuvre 
-    les standarts <abbr>PWA</abbr> (Progressive Web App), le routing, ainsi que le lazy-loading.`;
+    const description = `Le Cabinet de curiosités, club de robotique et stages scientifiques à Angoulême."`;
+    const description2 = `Ce site est développé en ${this.version} et met en oeuvre les standarts PWA (Progressive Web App), le routing ainsi que le lazy-loading.`;
+    const keywords = `Ateliers et stages, robotiques, électroniques, mécanique informatiqe, club de science, fablab, pédagogie pour les jeunes, Grand-Angoulême, Gond-Pontouvre, Charente.`
+    const name = `Nicolas Clément Makerspot Le Cabinet de Curiosités`
+    const title = `${this.name}`;
 
-    const title = `${this.name} : Page d\'accueil`;
-
-    this.seoService.setMetaDescription(content);
+    this.seoService.setMetaDescription(description);
+    this.seoService.setMetaDescription2(description2);
+    this.seoService.setMetaKeywords(keywords);
+    this.seoService.setMetaName(name);
     this.seoService.setMetaTitle(title);
 
     this.features = [
-        {
-          name: 'Services',
-          description: 'Utilise des services pour l\'email, la snackbar, le load-spinner et le SEO.',
-          icon: 'fas fa-handshake',
-          link: 'services'
-        },
-        {
-          name: 'Formulaire réactif',
-          description: 'Une approche basée sur un modèle pour gérer les saisies de formulaire.',
-          icon: 'far fa-file-alt',
-          link: 'formulaires'
-        },
-        {
-          name: 'Template Driven',
-          description: 'Les formulaires sont l\'un des piliers des applications métier.',
-          icon: 'far fa-file-alt',
-          link: 'formulaires'
-        },
+      {
+        name: 'Services',
+        description: 'Utilise des services pour l\'email, la snackbar, le load-spinner et le SEO.',
+        icon: 'fas fa-handshake'
+      },
+      {
+        name: 'Formulaire réactif',
+        description: 'Une approche basée sur un modèle pour gérer les saisies de formulaire.',
+        icon: 'far fa-file-alt'
+      },
+      {
+        name: 'Template Driven',
+        description: 'Les formulaires sont l\'un des piliers des applications métier.',
+        icon: 'far fa-file-alt'
+      },
     ];
     
   }
