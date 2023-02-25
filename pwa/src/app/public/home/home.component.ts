@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
 
   constructor(private seoService: SeoService) { 
 
-    const description = `${this.name}, club de robotique et stages scientifiques à Angoulême."`;
+    const description = `${this.name}, club de robotique et stages scientifiques à Angoulême.`;
     const keywords = `Ateliers et stages, robotiques, électroniques, mécanique informatiqe, club de science, fablab, pédagogie pour les jeunes, Grand-Angoulême, Gond-Pontouvre, Charente.`;
     const name = `Nicolas Clément Makerspot ${this.name}`;
     const colorValue = `${this.colorTheme}`
