@@ -17,17 +17,16 @@ export class HomeComponent implements OnInit {
 
   faFacebook = faFacebook;
   faInstagram = faInstagram;
+  name = environment.application.name;
 
   // SEO
-  name = environment.application.name;
-  version = environment.application.version;
   colorTheme = environment.application.colorTheme;
 
   constructor(private seoService: SeoService) { 
 
-    const description = `Le Cabinet de curiosités, club de robotique et stages scientifiques à Angoulême."`;
+    const description = `${this.name}, club de robotique et stages scientifiques à Angoulême."`;
     const keywords = `Ateliers et stages, robotiques, électroniques, mécanique informatiqe, club de science, fablab, pédagogie pour les jeunes, Grand-Angoulême, Gond-Pontouvre, Charente.`;
-    const name = `Nicolas Clément Makerspot Le Cabinet de Curiosités`;
+    const name = `Nicolas Clément Makerspot ${this.name}`;
     const colorValue = `${this.colorTheme}`
     const title = `${this.name}`;
 

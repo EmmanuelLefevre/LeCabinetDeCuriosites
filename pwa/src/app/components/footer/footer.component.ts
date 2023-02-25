@@ -1,7 +1,8 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core'
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 // Add ViewEncapsulation for resolve problems with loading custom scss .mat-tooltip in style.scss
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhoneAlt} from '@fortawesome/free-solid-svg-icons';
+import { environment } from '../../../environments/environment';
 
 
 @Component({
@@ -18,9 +19,10 @@ export class FooterComponent implements OnInit {
   faEnvelope = faEnvelope;
   faPhoneAlt = faPhoneAlt;
 
+  name = environment.application.name;
+
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }

@@ -1,5 +1,7 @@
 import { Component, AfterViewInit } from '@angular/core';
 import * as L from 'leaflet';
+import { environment } from '../../../../../environments/environment';
+
 
 @Component({
   selector: 'app-map',
@@ -9,6 +11,7 @@ import * as L from 'leaflet';
 
 export class MapComponent implements AfterViewInit {
 
+  name = environment.application.name;
   map: any;
 
   localIcon = new L.Icon({
@@ -55,7 +58,7 @@ export class MapComponent implements AfterViewInit {
       'autoClose' : false
     }
 
-    var localPopup = L.popup().setContent(`<b>Le Cabinet de Curiosités</b>`);
+    var localPopup = L.popup().setContent(`<b>${this.name}</b>`);
     var busTooltip = L.tooltip().setContent(`Bus: 2 / 6 / 10 / NAU`);
 
     L.marker([45.673812, 0.179429], { icon: this.localIcon }).bindPopup(localPopup, localOptions).addTo(this.map).openPopup();

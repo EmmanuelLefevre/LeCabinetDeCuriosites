@@ -1,8 +1,8 @@
 <div class="wrapper"> <!-- Main Wrapper -->
   <section id="intro"
            aria-label="Section de présentation du Cabinet de Curiosités"> <!-- Content Intro Section  -->
-    <h1>Le Cabinet de Curiosités</h1>
-    <p>Le Cabinet de Curiosités est un club d’exploration numérique et scientifique. 
+    <h1>{{name}}</h1>
+    <p>{{name}} est un club d’exploration numérique et scientifique. 
       Sa raison d'être est d'intéresser les jeunes aux sciences, en animant des 
       séances de création, de découverte et d'expérimentation, dans un véritable 
       atelier. Tous les coups sont permis : jeux scénarisés, challenges, enquêtes, 
@@ -17,7 +17,7 @@
       <div class="photo-container">
         <img id="photo" src="assets/img/project-portrait.jpg" 
              alt="photo de Nicolas Clément">
-        <h3><p>Nicolas Clément<br><span>Le Cabinet de Curiosités</span></p></h3>
+        <h3><p>Nicolas Clément<br><span>{{name}}</span></p></h3>
       </div>
       <a [routerLink]="['/']" 
          aria-label="Lien vers la page d'accueil" 
@@ -51,7 +51,7 @@
           séances toujours plus surprenantes.</p>
   
         <h2>Construire des raisonnements</h2>
-        <p>Comme son nom le suggère, « Le Cabinet de Curiosités » est une fenêtre 
+        <p>Comme son nom le suggère, « {{name}} » est une fenêtre 
           sur toutes les intrigues scientifiques. Ainsi, le génie du vivant ou les 
           bizarreries de la chimie, ont autant leur place que la conquête spatiale 
           et ses rovers martiens. Le fil conducteur est la découverte et 
@@ -79,7 +79,7 @@
         <hr>
         <p>Je suis persuadé que l’innovation ne se pratique pas seulement dans les laboratoires 
           ou les entreprises de pointe, mais par tout ceux qui se sentent concernés par les 
-          enjeux à venir, tant sociaux, qu’environnementaux. Le Cabinet de Curiosités se veut 
+          enjeux à venir, tant sociaux, qu’environnementaux. {{name}} se veut 
           être le lieu de partage et d’expérimentation répondant à ce besoin.
         </p>
         <hr>
