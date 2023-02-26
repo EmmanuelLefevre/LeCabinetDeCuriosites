@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { environment } from 'src/environments/environment';
 
 
 @Injectable({
@@ -8,39 +9,25 @@ import { Meta, Title } from '@angular/platform-browser';
 
 export class SeoService {
 
-  constructor(private meta: Meta,
+  title = environment.application.name;
+  author = environment.application.author;
+  colorTheme = environment.application.colorTheme;
+  keywords = environment.application.keywords;
+  mainDescription = environment.application.mainDescription;
+  
+  constructor(private metaService: Meta,
               private titleService: Title) {}
 
-  public setMetaDescription(description: string) {
-    this.meta.updateTag({
-        name: 'description',
-        content: description
-    });
-  }
+    addTags() {
+      this.metaService.addTag({ name: 'author', content: `${this.author} ${this.title}` });
+      this.metaService.addTag({ name: 'description', content: `${this.author}, ${this.mainDescription}` });
+      this.metaService.addTag({ name: 'keywords', content: this.keywords });
+      this.metaService.addTag({ name: 'theme-color', content: this.colorTheme });
+      this.metaService.addTag({ name: 'robots', content: 'index,follow' });
+    }
 
-  public setMetaKeywords(keywords: string) {
-    this.meta.updateTag({
-        name: 'keywords',
-        content: keywords
-    });
-  }
-
-  public setMetaName(name: string) {
-    this.meta.updateTag({
-        name: 'name',
-        content: name
-    });
-  }
-
-  public setMetaColorTheme(colorValue: string) {
-    this.meta.updateTag({
-        name: 'theme-color',
-        content: colorValue
-    });
-  }
-
-  public setMetaTitle(title:string) {
-    this.titleService.setTitle(title);
-  }
+    setTitle() {
+      this.titleService.setTitle(this.title);
+    }
 
 }

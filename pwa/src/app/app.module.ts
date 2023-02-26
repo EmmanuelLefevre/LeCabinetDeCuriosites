@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Meta } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -37,7 +37,8 @@ import { SnackbarComponent } from './components/snackbar/snackbar.component';
     MatTooltipModule
   ],
   providers: [
-    CustomHttpInterceptorProvider
+    CustomHttpInterceptorProvider,
+    Meta
   ],
   bootstrap: [AppComponent]
 })
