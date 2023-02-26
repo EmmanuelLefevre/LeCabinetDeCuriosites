@@ -14,6 +14,8 @@ export class SeoService {
   colorTheme = environment.application.colorTheme;
   keywords = environment.application.keywords;
   mainDescription = environment.application.mainDescription;
+  version = environment.application.version;
+  developer = environment.application.developer;
   
   constructor(private metaService: Meta,
               private titleService: Title) {}
@@ -22,6 +24,7 @@ export class SeoService {
       this.metaService.addTag({ name: 'author', content: `${this.author} ${this.title}` });
       this.metaService.addTag({ name: 'description', content: `${this.author}, ${this.mainDescription}` });
       this.metaService.addTag({ name: 'keywords', content: this.keywords });
+      this.metaService.addTag({ name: 'description', content: `Application développé en Angular ${this.version} par ${this.developer}` });
       this.metaService.addTag({ name: 'theme-color', content: this.colorTheme });
       this.metaService.addTag({ name: 'robots', content: 'index,follow' });
     }
