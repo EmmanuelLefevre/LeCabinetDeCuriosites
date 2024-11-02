@@ -39,6 +39,7 @@ testem.log
 
 # Project Files
 /src/environments/**
+.htaccess
 
 # System files
 .DS_Store
