@@ -41,6 +41,10 @@ header {
         .active-link > a {
           color: var(--text-color-nav);
           border-bottom: solid 2px var(--border-color-nav);
+          &:hover {
+            color: var(--text-color-nav);
+            border-bottom: solid 2px var(--border-color-nav);
+          }
         }
       }
     }
@@ -122,11 +126,11 @@ header {
               }
             }
           }
-          .active-link > a {
-            &:hover {
-              color: var(--text-color-nav);
-            }
-          }
+          // .active-link > a {
+          //   &:hover {
+          //     color: var(--text-color-nav);
+          //   }
+          // }
         }
       }
     }

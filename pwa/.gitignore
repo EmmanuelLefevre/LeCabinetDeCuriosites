@@ -39,8 +39,11 @@ testem.log
 
 # Project Files
 /src/environments/**
+<<<<<<< HEAD
 .htaccess
 makefile
+=======
+>>>>>>> 7698f604aefaac4ec44f3d84c32b3a92f3b3eb94
 
 # System files
 .DS_Store
