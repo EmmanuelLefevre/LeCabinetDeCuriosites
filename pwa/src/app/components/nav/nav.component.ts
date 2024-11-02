@@ -17,7 +17,7 @@ export class NavComponent implements OnInit {
   @ViewChild('contact')
   liContact!: ElementRef;
 
-  @HostBinding('class.burger-opened') burgerOpened = false;
+  @HostBinding('class.burger-opened') burgerOpened: boolean = false;
   
   constructor(private router: Router) { }
   
